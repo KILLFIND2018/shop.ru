@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.acc-btn {
+    color: white !important;
+}
+
+/* Медиа-запрос для маленьких и средних разрешений */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Меняем направление на столбец */
+        align-items: flex-start; /* Выравниваем элементы по левому краю */
+    }
+
+    .header > div {
+        margin-bottom: 10px; /* Добавляем отступ между элементами */
+        width: 100%;
+    }
+
+    .header > div:last-child {
+        margin-bottom: 0; /* Убираем отступ у последнего элемента */
+    }
+}
