@@ -43,7 +43,6 @@
             </span>
           </button>
         </div>
-
       </div>
       <div class="header-menu">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -76,6 +75,121 @@
             </div>
           </div>
         </nav>
+      </div>
+      <div id="carouselIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/3.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="sales">
+        <div class="sales-header">
+          <h1>Акции и предложения</h1>
+          <button type="button" class="btn btn-primary">
+            <a class = "acc-btn" href="#">Все акции</a>
+            <i class="bi bi-arrow-bar-right"></i>
+          </button>
+        </div>
+        <div class="sales-items">
+            <div class="cart-item">1</div>
+            <div class="cart-item">2</div>
+            <div class="cart-item">3</div>
+            <div class="cart-item">4</div>
+            <div class="cart-item">5</div>
+            <div class="cart-item">6</div>
+            <div class="cart-item">7</div>
+            <div class="cart-item">8</div>
+            <div class="cart-item">9</div>
+            <div class="cart-item">10</div>
+            <div class="cart-item">11</div>
+            <div class="cart-item">12</div>
+          
+        </div>
+
+      </div>
+      <div class="header-menu">
+          <div class="container-fluid">
+            
+              <ul class="menu">
+                <li class="menu-item">
+                  <a class="menu-link active" aria-current="page" href="#">Новинки</a>
+                </li>
+                <li class="menu-item">
+                  <a class="menu-link" href="#">Парфюмерия</a>
+                </li>
+                <li class="menu-item">
+                  <a class="menu-link" href="#">Уход</a>
+                </li>
+                <li class="menu-item">
+                  <a class="menu-link" href="#">Акции</a>
+                </li>
+                <li class="menu-item">
+                  <a class="menu-link" href="#">Распродажа</a>
+                </li>
+                <li class="menu-item">
+                  <a class="menu-link" href="#">Бренды</a>
+                </li>
+              </ul>
+            </div>
+        <div id="hitsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Слайды -->
+            <div class="carousel-item active">
+              <div class="hits-items">
+                <div class="hit-item">1</div>
+                <div class="hit-item">2</div>
+                <div class="hit-item">3</div>
+                <div class="hit-item">4</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="hits-items">
+                <div class="hit-item">5</div>
+                <div class="hit-item">6</div>
+                <div class="hit-item">7</div>
+                <div class="hit-item">8</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="hits-items">
+                <div class="hit-item">9</div>
+                <div class="hit-item">10</div>
+                <div class="hit-item">11</div>
+                <div class="hit-item">12</div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Кнопки управления -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#hitsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#hitsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
