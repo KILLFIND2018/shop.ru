@@ -111,25 +111,21 @@
           </button>
         </div>
         <div class="sales-items">
-            <div class="cart-item">1</div>
-            <div class="cart-item">2</div>
-            <div class="cart-item">3</div>
-            <div class="cart-item">4</div>
-            <div class="cart-item">5</div>
-            <div class="cart-item">6</div>
-            <div class="cart-item">7</div>
-            <div class="cart-item">8</div>
-            <div class="cart-item">9</div>
-            <div class="cart-item">10</div>
-            <div class="cart-item">11</div>
-            <div class="cart-item">12</div>
-          
+            <div class="cart-item"><img src="/img/parfum/1.png" class="img-thumbnail" alt="..."></div>
+            <div class="cart-item"><img src="/img/parfum/2.png" class="img-thumbnail" alt="..."></div>
+            <div class="cart-item"><img src="/img/parfum/3.png" class="img-thumbnail" alt="..."></div>
+            <div class="cart-item"><img src="/img/parfum/4.png" class="img-thumbnail" alt="..."></div>
+            <div class="cart-item"><img src="/img/parfum/5.png" class="img-thumbnail" alt="..."></div>
+            <div class="cart-item"><img src="/img/parfum/6.png" class="img-thumbnail" alt="..."></div>
+            <div class="cart-item"><img src="/img/parfum/7.png" class="img-thumbnail" alt="..."></div>
+            <div class="cart-item"><img src="/img/parfum/8.png" class="img-thumbnail" alt="..."></div>
+            <div class="cart-item"><img src="/img/parfum/1.png" class="img-thumbnail" alt="..."></div>
+            <div class="cart-item"><img src="/img/parfum/2.png" class="img-thumbnail" alt="..."></div>
+            <div class="cart-item"><img src="/img/parfum/3.png" class="img-thumbnail" alt="..."></div>
+            <div class="cart-item"><img src="/img/parfum/4.png" class="img-thumbnail" alt="..."></div>
         </div>
-
       </div>
-      <div class="header-menu">
-          <div class="container-fluid">
-            
+      <div class="hits-menu">
               <ul class="menu">
                 <li class="menu-item">
                   <a class="menu-link active" aria-current="page" href="#">Новинки</a>
@@ -150,36 +146,34 @@
                   <a class="menu-link" href="#">Бренды</a>
                 </li>
               </ul>
-            </div>
         <div id="hitsCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <!-- Слайды -->
             <div class="carousel-item active">
               <div class="hits-items">
-                <div class="hit-item">1</div>
-                <div class="hit-item">2</div>
-                <div class="hit-item">3</div>
-                <div class="hit-item">4</div>
+                <div class="hit-item"><img src="/img/parfum/1.png" class="img-thumbnail" alt="..."></div>
+                <div class="hit-item"><img src="/img/parfum/2.png" class="img-thumbnail" alt="..."></div>
+                <div class="hit-item"><img src="/img/parfum/3.png" class="img-thumbnail" alt="..."></div>
+                <div class="hit-item"><img src="/img/parfum/4.png" class="img-thumbnail" alt="..."></div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="hits-items">
-                <div class="hit-item">5</div>
-                <div class="hit-item">6</div>
-                <div class="hit-item">7</div>
-                <div class="hit-item">8</div>
+                <div class="hit-item"><img src="/img/parfum/7.png" class="img-thumbnail" alt="..."></div>
+                <div class="hit-item"><img src="/img/parfum/8.png" class="img-thumbnail" alt="..."></div>
+                <div class="hit-item"><img src="/img/parfum/1.png" class="img-thumbnail" alt="..."></div>
+                <div class="hit-item"><img src="/img/parfum/2.png" class="img-thumbnail" alt="..."></div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="hits-items">
-                <div class="hit-item">9</div>
-                <div class="hit-item">10</div>
-                <div class="hit-item">11</div>
-                <div class="hit-item">12</div>
+                <div class="hit-item"><img src="/img/parfum/1.png" class="img-thumbnail" alt="..."></div>
+                <div class="hit-item"><img src="/img/parfum/2.png" class="img-thumbnail" alt="..."></div>
+                <div class="hit-item"><img src="/img/parfum/3.png" class="img-thumbnail" alt="..."></div>
+                <div class="hit-item"><img src="/img/parfum/4.png" class="img-thumbnail" alt="..."></div>
               </div>
             </div>
           </div>
-        
           <!-- Кнопки управления -->
           <button class="carousel-control-prev" type="button" data-bs-target="#hitsCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -190,6 +184,10 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+      </div>
+      <div class="certificate-img">
+        <a href="#"><img src="img/4.png" class="img-fluid" alt="..."></a>
+        
       </div>
     </div>
   </div>

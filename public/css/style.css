@@ -44,6 +44,21 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    list-style: none;
+    overflow-y: auto;
+}
+
+.menu-item {
+    padding-top: 10px;
+    margin: 0 5px 0 5px;
+}
+
+.menu-link {
+    color: grey;
+}
+
+.img-fluid {
+    padding: 10px 0 10px 0;
 }
 
 a, a:hover {
