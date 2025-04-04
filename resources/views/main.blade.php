@@ -256,38 +256,103 @@
         <div class="news-item">
           <a href="#" class = "news-link">
             <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
-            <h3>Новость 1</h3>
+            <p>
+              шивмп швпар вазщыа ышоах цукцук цвйцуйуу
+            </p>
           </a>
-          <p>
-            шивмп швпар вазщыа ышоах цукцук цвйцуйуу
-          </p>
         </div>
         <div class="news-item">
           <a href="#" class = "news-link">
             <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
-            <h3>Новость 2</h3>
+            <p>
+              шивмп швпар вазщыа ышоах цукцук цвйцуйуу
+            </p>
           </a>
-          <p>
-            шивмп швпар вазщыа ышоах цукцук цвйцуйуу
-          </p>
         </div>
         <div class="news-item">
           <a href="#" class = "news-link">
             <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
-            <h3>Новость 3</h3>
+            <p>
+              шивмп швпар вазщыа ышоах цукцук цвйцуйуу
+            </p>
           </a>
-          <p>
-            шивмп швпар вазщыа ышоах цукцук цвйцуйуу
-          </p>
         </div>
         <div class="news-item">
           <a href="#" class = "news-link">
             <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
-            <h3>Новость 4</h3>
+            <p>
+              шивмп швпар вазщыа ышоах цукцук цвйцуйуу
+            </p>
           </a>
-          <p>
-            шивмп швпар вазщыа ышоах цукцук цвйцуйуу
-          </p>
+        </div>
+      </div>
+      <div class="articles-header">
+        <h1>Статьи</h1>
+        <button type="button" class="btn btn-primary">
+          <a class = "acc-btn" href="#">Все статьи</a>
+          <i class="bi bi-arrow-bar-right"></i>
+        </button>
+      </div>
+      <div class="articles">
+        <div class="articels-item">
+          <a href="#" class = "articles-link">
+            <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
+            <p>
+              шивмп швпар вазщыа ышоах цукцук цвйцуйуу
+            </p>
+          </a>
+        </div>
+        <div class="articels-item">
+          <a href="#" class = "articles-link">
+            <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
+            <p>
+              шивмп швпар вазщыа ышоах цукцук цвйцуйуу
+            </p>
+          </a>
+        </div>
+        <div class="articels-item">
+          <a href="#" class = "articles-link">
+            <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
+            <p>
+              шивмп швпар вазщыа ышоах цукцук цвйцуйуу
+            </p>
+          </a>
+        </div>
+        <div class="articels-item">
+          <a href="#" class = "articles-link">
+            <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
+            <p>
+              шивмп швпар вазщыа ышоах цукцук цвйцуйуу
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="brends-header">
+        <h1>Топ бренды</h1>
+        <button type="button" class="btn btn-primary">
+          <a class = "acc-btn" href="#">Все бренды</a>
+          <i class="bi bi-arrow-bar-right"></i>
+        </button>
+      </div>
+      <div class="marquee-container">
+        <div class="marquee-content">
+          <img src="/img/brends/1.png" alt="">
+          <img src="/img/brends/2.png" alt="">
+          <img src="/img/brends/3.png" alt="">
+          <img src="/img/brends/4.png" alt="">
+          <img src="/img/brends/5.png" alt="">
+          <img src="/img/brends/6.png" alt="">
+          <img src="/img/brends/7.png" alt="">
+          <img src="/img/brends/8.png" alt="">
+          <!-- Дублируем для бесшовной анимации -->
+          <img src="/img/brends/1.png" alt="">
+          <img src="/img/brends/2.png" alt="">
+          <img src="/img/brends/3.png" alt="">
+          <img src="/img/brends/4.png" alt="">
+          <img src="/img/brends/5.png" alt="">
+          <img src="/img/brends/6.png" alt="">
+          <img src="/img/brends/7.png" alt="">
+          <img src="/img/brends/8.png" alt="">
         </div>
       </div>
     </div>
