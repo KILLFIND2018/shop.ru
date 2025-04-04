@@ -94,6 +94,38 @@
     100% { transform: translateX(-50%); }
   }
 
+.menu-footer {
+    list-style: none;
+}
+
+.footer-menu-link-active {
+    font-size: 150%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 1px grey solid;
+}
+
+.footer-dev {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+}
+
+.social-link {
+    padding: 0 20px 0 20px;
+}
 .img-fluid {
     padding: 10px 0 10px 0;
 }
@@ -124,6 +156,10 @@ a, a:hover {
 
     .sales-items, .reviews, .news , .articles {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-footer {
+        display: none;
     }
 }
 
