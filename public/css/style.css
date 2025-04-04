@@ -10,7 +10,14 @@
     justify-content: space-between;
 }
 
-.sales-items {
+.sales-header, .reviews-header, .news-header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sales-items, .reviews , .news{
     display: grid;
     gap: 10px; /* Расстояние между элементами */
     grid-template-columns: repeat(4, 1fr);
@@ -20,6 +27,14 @@
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
+}
+
+.reviews-link, .news-link {
+    color: #692413;
+}
+
+.reviews-link:hover, .news-linl:hover {
+    color: aqua;
 }
 
 .hits-items {
@@ -85,7 +100,7 @@ a, a:hover {
         margin-bottom: 0; /* Убираем отступ у последнего элемента */
     }
 
-    .sales-items {
+    .sales-items, .reviews, .news {
         grid-template-columns: repeat(2, 1fr);
     }
 }

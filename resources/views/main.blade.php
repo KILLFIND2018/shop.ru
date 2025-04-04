@@ -187,7 +187,108 @@
       </div>
       <div class="certificate-img">
         <a href="#"><img src="img/4.png" class="img-fluid" alt="..."></a>
-        
+      </div>
+      <div class="reviews-header">
+        <h1>Отзывы наших клиентов</h1>
+        <button type="button" class="btn btn-primary">
+          <a class = "acc-btn" href="#">Все отзывы</a>
+          <i class="bi bi-arrow-bar-right"></i>
+        </button>
+      </div>
+      <div class="reviews">
+        <div class="reviews-block">
+          <a href="#" class = "reviews-link">
+            <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
+            <h3>Hermes H22 Herbes Vives</h3>
+          </a>
+          <p>
+            шивмп швпар вазщыа ышоах цукцук цвйцуйуу
+            <br>
+            <br>
+            Иванов Иван иванович
+          </p>
+        </div>
+        <div class="reviews-block">
+          <a href="#" class = "reviews-link">
+            <img src="/img/parfum/8.png" class="img-thumbnail" alt="...">
+            <h3>Hermes H22 Herbes Vives</h3>
+          </a>
+          <p>
+            шивмп швпар вазщыа ышоах цукцук цвйцуйуу
+            <br>
+            <br>
+            Иванов Иван иванович
+          </p>
+        </div>
+        <div class="reviews-block">
+          <a href="#" class = "reviews-link">
+            <img src="/img/parfum/2.png" class="img-thumbnail" alt="...">
+            <h3>Hermes H22 Herbes Vives</h3>
+          </a>
+          <p>
+            шивмп швпар вазщыа ышоах цукцук цвйцуйуу
+            <br>
+            <br>
+            Иванов Иван иванович
+          </p>
+        </div>
+        <div class="reviews-block">
+          <a href="#" class = "reviews-link">
+            <img src="/img/parfum/6.png" class="img-thumbnail" alt="...">
+            <h3>Hermes H22 Herbes Vives</h3>
+          </a>
+          <p>
+            шивмп швпар вазщыа ышоах цукцук цвйцуйуу
+            <br>
+            <br>
+            Иванов Иван иванович
+          </p>
+        </div>
+      </div>
+      <div class="news-header">
+        <h1>Новости</h1>
+        <button type="button" class="btn btn-primary">
+          <a class = "acc-btn" href="#">Все новости</a>
+          <i class="bi bi-arrow-bar-right"></i>
+        </button>
+      </div>
+      <div class="news">
+        <div class="news-item">
+          <a href="#" class = "news-link">
+            <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
+            <h3>Новость 1</h3>
+          </a>
+          <p>
+            шивмп швпар вазщыа ышоах цукцук цвйцуйуу
+          </p>
+        </div>
+        <div class="news-item">
+          <a href="#" class = "news-link">
+            <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
+            <h3>Новость 2</h3>
+          </a>
+          <p>
+            шивмп швпар вазщыа ышоах цукцук цвйцуйуу
+          </p>
+        </div>
+        <div class="news-item">
+          <a href="#" class = "news-link">
+            <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
+            <h3>Новость 3</h3>
+          </a>
+          <p>
+            шивмп швпар вазщыа ышоах цукцук цвйцуйуу
+          </p>
+        </div>
+        <div class="news-item">
+          <a href="#" class = "news-link">
+            <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
+            <h3>Новость 4</h3>
+          </a>
+          <p>
+            шивмп швпар вазщыа ышоах цукцук цвйцуйуу
+          </p>
+        </div>
       </div>
     </div>
   </div>
