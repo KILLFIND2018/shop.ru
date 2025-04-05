@@ -171,7 +171,7 @@
   }
   
   /* Общие стили для бейджей */
-  .discont, .new {
+  .discont, .new, .sale, .promo {
     color: white;
     padding: 6px 12px;
     font-size: 14px;
@@ -192,17 +192,29 @@
     padding-right: 20px;
     clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0 100%, 0 0);
   }
+
+  .sale {
+    background-color: #a5e70c;
+    padding-right: 20px;
+    clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0 100%, 0 0);
+  }
+
+  .promo {
+    background-color: #c09e08;
+    padding-right: 20px;
+    clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0 100%, 0 0);
+  }
   
   /* Блок статистики внизу изображения */
   .hit-item-stats {
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 20px;
-    bottom: 100px;
-    gap: 15px;
     padding: 10px;
     z-index: 2;
+    bottom: 125px;
+    left: 25px;
+    gap: 10px;
   }
   
   /* Гарантируем правильное отображение изображения */
@@ -310,7 +322,7 @@
 }
 
 .sales-block span {
-    background-color: #eb4dac;
+    background-color: #eb4dacb0;
     border-radius: 5px;
     padding: 5% 15% 5% 15%;
 }
@@ -323,6 +335,8 @@
     justify-content: space-around;
     list-style: none;
     overflow-y: auto;
+    height: 45px;
+    overflow-x: hidden;
 }
 
 .menu-item {
@@ -462,18 +476,13 @@ a:hover {
     gap: 5px;
   }
   
-  .discont, .new {
+  .discont, .new, .sale, .promo {
     font-size: 10px;
     padding: 4px 8px;
     clip-path: polygon(100% 0%, 95% 50%, 100% 100%, 0 100%, 0 0);
   }
 
-  /* Адаптация блока статистики */
-  .hit-item-stats {
-    bottom: 75px;
-    left: 15px;
-    gap: 8px;
-  }
+  
   
   .favorite-icon,
   .review-icon {
