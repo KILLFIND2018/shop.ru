@@ -47,14 +47,13 @@
     left: 0;
     width: 100%;
     height: 40%;
-    background: linear-gradient(
-        to bottom,
-        rgba(255, 50, 50, 0) 0%,
-        rgba(255, 0, 0, 0.6) 50%,
-        rgba(255, 50, 50, 0) 100%
-    );
+    background: linear-gradient(to bottom,
+            rgba(255, 50, 50, 0) 0%,
+            rgba(255, 0, 0, 0.6) 50%,
+            rgba(255, 50, 50, 0) 100%);
     opacity: 0;
-    z-index: 4; /* Выше чем у изображения */
+    z-index: 4;
+    /* Выше чем у изображения */
     mix-blend-mode: screen;
     pointer-events: none;
     animation: scanner-pass 5s linear;
@@ -93,8 +92,9 @@
     display: block;
     width: 100%;
     position: relative;
-    z-index: 2; /* Ниже чем у эффектов */
-    transition: 
+    z-index: 2;
+    /* Ниже чем у эффектов */
+    transition:
         filter 1.5s,
         transform 2s cubic-bezier(0.19, 1, 0.22, 1);
     filter: brightness(0.95);
@@ -112,12 +112,15 @@
         top: -100%;
         opacity: 0;
     }
+
     10% {
         opacity: 1;
     }
+
     90% {
         opacity: 0.8;
     }
+
     100% {
         top: 150%;
         opacity: 0;
@@ -133,7 +136,7 @@
 }
 
 .reviews-link:hover,
-.news-linl:hover,
+.news-link:hover,
 .articles-link:hover,
 .footer-menu-link:hover,
 .footer-menu-link-active:hover {
@@ -154,59 +157,60 @@
     padding: 10px;
     text-align: center;
     box-sizing: border-box;
-    position: relative; /* Для абсолютного позиционирования дочерних элементов */
-  overflow: hidden; /* Чтобы обрезать выходящие за границы элементы */
+    position: relative;
+    /* Для абсолютного позиционирования дочерних элементов */
+    overflow: hidden;
+    /* Чтобы обрезать выходящие за границы элементы */
 
 }
+
 /* Стили для бейджей */
 .hit-item-badges {
     position: absolute;
     top: 10px;
     right: 10px;
-    z-index: 2; /* Чтобы бейджи были поверх изображения */
+    z-index: 2;
+    /* Чтобы бейджи были поверх изображения */
     display: flex;
     flex-direction: column;
     gap: 8px;
     align-items: flex-end;
-  }
-  
-  /* Общие стили для бейджей */
-  .discont, .new, .sale, .promo {
+}
+
+/* Общие стили для бейджей */
+.discont,
+.new,
+.sale,
+.promo {
     color: white;
     padding: 6px 12px;
     font-size: 14px;
     font-weight: bold;
     position: relative;
     border-radius: 3px;
-  }
-  
-  /* Форма флажка с помощью clip-path */
-  .discont {
+    padding-right: 20px;
+    clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0 100%, 0 0);
+}
+
+/* Форма флажка с помощью clip-path */
+.discont {
     background-color: red;
-    padding-right: 20px;
-    clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0 100%, 0 0);
-  }
-  
-  .new {
+}
+
+.new {
     background-color: #692413;
-    padding-right: 20px;
-    clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0 100%, 0 0);
-  }
+}
 
-  .sale {
+.sale {
     background-color: #a5e70c;
-    padding-right: 20px;
-    clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0 100%, 0 0);
-  }
+}
 
-  .promo {
+.promo {
     background-color: #c09e08;
-    padding-right: 20px;
-    clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0 100%, 0 0);
-  }
-  
-  /* Блок статистики внизу изображения */
-  .hit-item-stats {
+}
+
+/* Блок статистики внизу изображения */
+.hit-item-stats {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -215,36 +219,37 @@
     bottom: 125px;
     left: 25px;
     gap: 10px;
-  }
-  
-  /* Гарантируем правильное отображение изображения */
-  .hit-item img {
+}
+
+/* Гарантируем правильное отображение изображения */
+.hit-item img {
     width: 100%;
     height: auto;
     display: block;
     position: relative;
     z-index: 1;
-  }
-  
-  /* Существующие стили оставляем без изменений */
-  .hit-body-header, .hit-body-price {
+}
+
+/* Существующие стили оставляем без изменений */
+.hit-body-header,
+.hit-body-price {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
     padding-left: 5%;
-  }
-  
-  .hit-body-header>h3>span {
+}
+
+.hit-body-header>h3>span {
     color: grey;
     font-weight: normal !important;
-  }
-  
-  .hit-body-price {
+}
+
+.hit-body-price {
     color: grey;
     font-size: 125%;
     font-weight: bolder;
-  }
+}
 
 .menu-link.active {
     color: #160404;
@@ -254,21 +259,23 @@
 }
 
 
-  
-  .favorite-icon {
-    color: #ffd700; /* Золотой цвет для звезды */
+
+.favorite-icon {
+    color: #ffd700;
+    /* Золотой цвет для звезды */
     cursor: pointer;
-  }
-  
-  .review-icon {
-    color: #ff4081; /* Розовый цвет для сердца */
+}
+
+.review-icon {
+    color: #ff4081;
+    /* Розовый цвет для сердца */
     cursor: pointer;
-  }
+}
 
 .main-block {
     position: absolute;
     top: 50%;
-    transform: translateY( -50%);
+    transform: translateY(-50%);
     text-align: center;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -289,7 +296,7 @@
     left: 20%;
     right: auto;
     text-align: left;
-    
+
 }
 
 .main-block button {
@@ -313,7 +320,7 @@
     position: absolute;
     top: 30%;
     left: 5%;
-    transform: translateY( -50%);
+    transform: translateY(-50%);
     text-align: center;
     color: #160404;
     text-shadow: 2px 2px 4px rgb(193 199 215 / 75%);
@@ -403,10 +410,18 @@
 
 .social {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .social-link {
     padding: 0 20px 0 20px;
+}
+
+.social img {
+  width: 30px;
+  height: auto;
+  float: left;
 }
 
 .img-fluid {
@@ -425,7 +440,9 @@ a:hover {
 /* Скрытие неактивных каруселей */
 .carousel:not(.show) {
     display: none;
-  }
+}
+
+
 
 /* Медиа-запрос для маленьких и средних разрешений */
 @media (max-width: 768px) {
@@ -459,61 +476,84 @@ a:hover {
     }
 
     /* Адаптация карусели */
-  .hits-items {
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-  
-  .hit-item {
-    flex: 1 1 48%; /* Два элемента в ряд */
-    min-width: 48%;
-  }
+    .hits-items {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
 
-  /* Уменьшение бейджей */
-  .hit-item-badges {
-    top: 5px;
-    right: 5px;
-    gap: 5px;
-  }
-  
-  .discont, .new, .sale, .promo {
-    font-size: 10px;
-    padding: 4px 8px;
-    clip-path: polygon(100% 0%, 95% 50%, 100% 100%, 0 100%, 0 0);
-  }
+    .hit-item {
+        flex: 1 1 48%;
+        /* Два элемента в ряд */
+        min-width: 48%;
+    }
 
-  
-  
-  .favorite-icon,
-  .review-icon {
-    font-size: 18px !important;
-  }
+    /* Уменьшение бейджей */
+    .hit-item-badges {
+        top: 5px;
+        right: 5px;
+        gap: 5px;
+    }
 
-  /* Адаптация текста */
-  .hit-body-header h3 {
-    font-size: 16px;
-  }
-  
-  .hit-body-price {
-    font-size: 18px;
+    .discont,
+    .new,
+    .sale,
+    .promo {
+        font-size: 10px;
+        padding: 4px 8px;
+        clip-path: polygon(100% 0%, 95% 50%, 100% 100%, 0 100%, 0 0);
+    }
+
+
+
+    .favorite-icon,
+    .review-icon {
+        font-size: 18px !important;
+    }
+
+    /* Адаптация текста */
+    .hit-body-header h3 {
+        font-size: 16px;
+    }
+
+    .hit-body-price {
+        font-size: 18px;
+    }
+
+    .social img {
+      float: left;
+    }
+
+    .social {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-around;
   }
 }
 
 
 
 @media (max-width: 480px) {
+
     /* Дополнительные правки для очень маленьких экранов */
     .hit-item {
-      flex: 1 1 100%; /* На очень узких экранах - 1 элемент */
+        flex: 1 1 100%;
+        /* На очень узких экранах - 1 элемент */
     }
-    
+
     .hit-item-stats {
-      bottom: 60px;
-      left: 10px;
+        bottom: 60px;
+        left: 10px;
     }
-    
+
     .favorite-icon,
     .review-icon {
-      font-size: 16px !important;
+        font-size: 16px !important;
     }
+
+    .social img {
+      width: 15%;
+      float: left;
+      height: auto;
   }
+}

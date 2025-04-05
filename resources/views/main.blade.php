@@ -1664,9 +1664,9 @@
         <h3>Мессенджеры</h3>
       </div>
       <div class="social">
-        <a href="http://" class="social-link">Группа в ВК</a>
-        <a href="http://" class="social-link">Telegram-канал</a>
-        <a href="http://" class="social-link">Telegram-бот</a>
+        <a href="http://" class="social-link"><img class = "social" src="/img/social/vk.svg" alt="">Группа в ВК</a>
+        <a href="http://" class="social-link"><img class = "social" src="/img/social/tg.svg" alt="">Telegram-канал</a>
+        <a href="http://" class="social-link"><img class = "social" src="/img/social/tg.svg" alt="">Telegram-бот</a>
       </div>
       <div class="footer-dev">Магазин Shop.ru 2025г</div>
     </div>
