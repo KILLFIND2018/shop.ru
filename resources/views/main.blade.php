@@ -7,7 +7,7 @@
   <title>Главная</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
@@ -27,16 +27,16 @@
         <div class="account">
           <div class="btn-group" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-primary">
-              <a class = "acc-btn" href="#">Вход</a>
+              <a class="acc-btn" href="#">Вход</a>
             </button>
             <button type="button" class="btn btn-primary">
-              <a class = "acc-btn" href="#">Регистрация</a>
+              <a class="acc-btn" href="#">Регистрация</a>
             </button>
           </div>
         </div>
         <div class="cart">
           <button type="button" class="btn btn-outline-primary position-relative">
-            <i class="bi bi-cart">  Корзина</i> <!-- Иконка корзины -->
+            <i class="bi bi-cart"> Корзина</i> <!-- Иконка корзины -->
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
               0 <!-- Количество товаров в корзине -->
               <span class="visually-hidden">товаров в корзине</span>
@@ -48,7 +48,9 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">LOGOTIP SHOP</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -78,19 +80,35 @@
       </div>
       <div id="carouselIndicators" class="carousel slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active slide-left">
             <img src="img/1.png" class="d-block w-100" alt="...">
+            <div class="main-block">
+              <h2>Dolce & Gobbana</h2>
+              <p>Попробуй новый аромат</p>
+              <button type="submit">Купить</button>
+            </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item slide-right">
             <img src="img/2.png" class="d-block w-100" alt="...">
+            <div class="main-block">
+              <h2>Новая коллекция</h2> <!-- Пример другого текста -->
+              <p>Осенние ароматы</p>
+              <button type="submit">Выбрать</button>
+            </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item slide-right">
             <img src="img/3.png" class="d-block w-100" alt="...">
+            <div class="main-block">
+              <h2>Специальное предложение</h2>
+              <p>Скидки до 30%</p>
+              <button type="submit">Подробнее</button>
+            </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
@@ -106,46 +124,46 @@
         <div class="sales-header">
           <h1>Акции и предложения</h1>
           <button type="button" class="btn btn-primary">
-            <a class = "acc-btn" href="#">Все акции</a>
+            <a class="acc-btn" href="#">Все акции</a>
             <i class="bi bi-arrow-bar-right"></i>
           </button>
         </div>
         <div class="sales-items">
-            <div class="cart-item"><img src="/img/parfum/1.png" class="img-thumbnail" alt="..."></div>
-            <div class="cart-item"><img src="/img/parfum/2.png" class="img-thumbnail" alt="..."></div>
-            <div class="cart-item"><img src="/img/parfum/3.png" class="img-thumbnail" alt="..."></div>
-            <div class="cart-item"><img src="/img/parfum/4.png" class="img-thumbnail" alt="..."></div>
-            <div class="cart-item"><img src="/img/parfum/5.png" class="img-thumbnail" alt="..."></div>
-            <div class="cart-item"><img src="/img/parfum/6.png" class="img-thumbnail" alt="..."></div>
-            <div class="cart-item"><img src="/img/parfum/7.png" class="img-thumbnail" alt="..."></div>
-            <div class="cart-item"><img src="/img/parfum/8.png" class="img-thumbnail" alt="..."></div>
-            <div class="cart-item"><img src="/img/parfum/1.png" class="img-thumbnail" alt="..."></div>
-            <div class="cart-item"><img src="/img/parfum/2.png" class="img-thumbnail" alt="..."></div>
-            <div class="cart-item"><img src="/img/parfum/3.png" class="img-thumbnail" alt="..."></div>
-            <div class="cart-item"><img src="/img/parfum/4.png" class="img-thumbnail" alt="..."></div>
+          <div class="cart-item"><img src="/img/parfum/1.png" class="img-thumbnail" alt="..."></div>
+          <div class="cart-item"><img src="/img/parfum/2.png" class="img-thumbnail" alt="..."></div>
+          <div class="cart-item"><img src="/img/parfum/3.png" class="img-thumbnail" alt="..."></div>
+          <div class="cart-item"><img src="/img/parfum/4.png" class="img-thumbnail" alt="..."></div>
+          <div class="cart-item"><img src="/img/parfum/5.png" class="img-thumbnail" alt="..."></div>
+          <div class="cart-item"><img src="/img/parfum/6.png" class="img-thumbnail" alt="..."></div>
+          <div class="cart-item"><img src="/img/parfum/7.png" class="img-thumbnail" alt="..."></div>
+          <div class="cart-item"><img src="/img/parfum/8.png" class="img-thumbnail" alt="..."></div>
+          <div class="cart-item"><img src="/img/parfum/1.png" class="img-thumbnail" alt="..."></div>
+          <div class="cart-item"><img src="/img/parfum/2.png" class="img-thumbnail" alt="..."></div>
+          <div class="cart-item"><img src="/img/parfum/3.png" class="img-thumbnail" alt="..."></div>
+          <div class="cart-item"><img src="/img/parfum/4.png" class="img-thumbnail" alt="..."></div>
         </div>
       </div>
       <div class="hits-menu">
-          <ul class="menu">
-            <li class="menu-item">
-              <a class="menu-link active" aria-current="page" href="#">Новинки</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-link" href="#">Парфюмерия</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-link" href="#">Уход</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-link" href="#">Акции</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-link" href="#">Распродажа</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-link" href="#">Бренды</a>
-            </li>
-          </ul>
+        <ul class="menu">
+          <li class="menu-item">
+            <a class="menu-link active" aria-current="page" href="#">Новинки</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">Парфюмерия</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">Уход</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">Акции</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">Распродажа</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">Бренды</a>
+          </li>
+        </ul>
         <div id="hitsCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <!-- Слайды -->
@@ -191,13 +209,13 @@
       <div class="reviews-header">
         <h1>Отзывы наших клиентов</h1>
         <button type="button" class="btn btn-primary">
-          <a class = "acc-btn" href="#">Все отзывы</a>
+          <a class="acc-btn" href="#">Все отзывы</a>
           <i class="bi bi-arrow-bar-right"></i>
         </button>
       </div>
       <div class="reviews">
         <div class="reviews-block">
-          <a href="#" class = "reviews-link">
+          <a href="#" class="reviews-link">
             <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
             <h3>Hermes H22 Herbes Vives</h3>
           </a>
@@ -209,7 +227,7 @@
           </p>
         </div>
         <div class="reviews-block">
-          <a href="#" class = "reviews-link">
+          <a href="#" class="reviews-link">
             <img src="/img/parfum/8.png" class="img-thumbnail" alt="...">
             <h3>Hermes H22 Herbes Vives</h3>
           </a>
@@ -221,7 +239,7 @@
           </p>
         </div>
         <div class="reviews-block">
-          <a href="#" class = "reviews-link">
+          <a href="#" class="reviews-link">
             <img src="/img/parfum/2.png" class="img-thumbnail" alt="...">
             <h3>Hermes H22 Herbes Vives</h3>
           </a>
@@ -233,7 +251,7 @@
           </p>
         </div>
         <div class="reviews-block">
-          <a href="#" class = "reviews-link">
+          <a href="#" class="reviews-link">
             <img src="/img/parfum/6.png" class="img-thumbnail" alt="...">
             <h3>Hermes H22 Herbes Vives</h3>
           </a>
@@ -248,13 +266,13 @@
       <div class="news-header">
         <h1>Новости</h1>
         <button type="button" class="btn btn-primary">
-          <a class = "acc-btn" href="#">Все новости</a>
+          <a class="acc-btn" href="#">Все новости</a>
           <i class="bi bi-arrow-bar-right"></i>
         </button>
       </div>
       <div class="news">
         <div class="news-item">
-          <a href="#" class = "news-link">
+          <a href="#" class="news-link">
             <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
             <p>
               шивмп швпар вазщыа ышоах цукцук цвйцуйуу
@@ -262,7 +280,7 @@
           </a>
         </div>
         <div class="news-item">
-          <a href="#" class = "news-link">
+          <a href="#" class="news-link">
             <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
             <p>
               шивмп швпар вазщыа ышоах цукцук цвйцуйуу
@@ -270,7 +288,7 @@
           </a>
         </div>
         <div class="news-item">
-          <a href="#" class = "news-link">
+          <a href="#" class="news-link">
             <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
             <p>
               шивмп швпар вазщыа ышоах цукцук цвйцуйуу
@@ -278,7 +296,7 @@
           </a>
         </div>
         <div class="news-item">
-          <a href="#" class = "news-link">
+          <a href="#" class="news-link">
             <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
             <p>
               шивмп швпар вазщыа ышоах цукцук цвйцуйуу
@@ -289,13 +307,13 @@
       <div class="articles-header">
         <h1>Статьи</h1>
         <button type="button" class="btn btn-primary">
-          <a class = "acc-btn" href="#">Все статьи</a>
+          <a class="acc-btn" href="#">Все статьи</a>
           <i class="bi bi-arrow-bar-right"></i>
         </button>
       </div>
       <div class="articles">
         <div class="articels-item">
-          <a href="#" class = "articles-link">
+          <a href="#" class="articles-link">
             <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
             <p>
               шивмп швпар вазщыа ышоах цукцук цвйцуйуу
@@ -303,7 +321,7 @@
           </a>
         </div>
         <div class="articels-item">
-          <a href="#" class = "articles-link">
+          <a href="#" class="articles-link">
             <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
             <p>
               шивмп швпар вазщыа ышоах цукцук цвйцуйуу
@@ -311,7 +329,7 @@
           </a>
         </div>
         <div class="articels-item">
-          <a href="#" class = "articles-link">
+          <a href="#" class="articles-link">
             <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
             <p>
               шивмп швпар вазщыа ышоах цукцук цвйцуйуу
@@ -319,7 +337,7 @@
           </a>
         </div>
         <div class="articels-item">
-          <a href="#" class = "articles-link">
+          <a href="#" class="articles-link">
             <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
             <p>
               шивмп швпар вазщыа ышоах цукцук цвйцуйуу
@@ -330,7 +348,7 @@
       <div class="brends-header">
         <h1>Топ бренды</h1>
         <button type="button" class="btn btn-primary">
-          <a class = "acc-btn" href="#">Все бренды</a>
+          <a class="acc-btn" href="#">Все бренды</a>
           <i class="bi bi-arrow-bar-right"></i>
         </button>
       </div>
@@ -471,11 +489,13 @@
         <br>
         info@shop.ru
       </div>
-      <div class="social-header"><h3>Мессенджеры</h3></div>
+      <div class="social-header">
+        <h3>Мессенджеры</h3>
+      </div>
       <div class="social">
-        <a href="http://" class = "social-link">Группа в ВК</a>
-        <a href="http://" class = "social-link">Telegram-канал</a>
-        <a href="http://" class = "social-link">Telegram-бот</a>
+        <a href="http://" class="social-link">Группа в ВК</a>
+        <a href="http://" class="social-link">Telegram-канал</a>
+        <a href="http://" class="social-link">Telegram-бот</a>
       </div>
       <div class="footer-dev">Магазин Shop.ru 2025г</div>
     </div>

@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .header {
     display: flex;
     flex-direction: row;
@@ -10,50 +11,181 @@
     justify-content: space-between;
 }
 
-.sales-header, .reviews-header, .news-header, .articles-header, .brends-header {
+.sales-header,
+.reviews-header,
+.news-header,
+.articles-header,
+.brends-header {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.sales-items, .reviews , .news , .articles{
+.sales-items,
+.reviews,
+.news,
+.articles {
     display: grid;
-    gap: 10px; /* Расстояние между элементами */
+    gap: 10px;
+    /* Расстояние между элементами */
     grid-template-columns: repeat(4, 1fr);
 }
 
 .cart-item {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    transition: all 2s;
 }
 
-.reviews-link, .news-link, .articles-link {
+/* Эффект движущейся световой линии */
+.cart-item::after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 50, 50, 0) 0%,
+        rgba(255, 0, 0, 0.6) 50%,
+        rgba(255, 50, 50, 0) 100%
+    );
+    opacity: 0;
+    transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Фоновая подсветка */
+.cart-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    z-index: 1;
+}
+
+/* Состояние при наведении */
+.cart-item:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+}
+
+.cart-item:hover::after {
+    top: 150%;
+    opacity: 1;
+    transition: 
+        top 2.5s cubic-bezier(0.16, 0.79, 0.32, 0.95),
+        opacity 1.2s linear;
+}
+
+.cart-item:hover::before {
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+/* Стили для изображения */
+.img-thumbnail {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    background: transparent !important;
+    transition: 
+        filter 1.2s,
+        transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    filter: brightness(0.95);
+}
+
+.cart-item:hover .img-thumbnail {
+    filter: brightness(1.1);
+    transform: scale(1.03) rotateZ(0.5deg);
+}
+
+.reviews-link,
+.news-link,
+.articles-link,
+.footer-menu-link,
+.footer-menu-link-active {
     color: #692413;
 }
 
-.reviews-link:hover, .news-linl:hover, .articles-link:hover {
+.reviews-link:hover,
+.news-linl:hover,
+.articles-link:hover,
+.footer-menu-link:hover,
+.footer-menu-link-active:hover {
     color: aqua;
 }
 
 .hits-items {
     display: flex;
     justify-content: space-between;
-    gap: 10px; /* Расстояние между элементами */
-  }
-  
-  .hit-item {
-    flex: 1 1 23%; /* Каждый элемент занимает ~23% ширины (4 элемента в строке) */
+    gap: 10px;
+    /* Расстояние между элементами */
+}
+
+.hit-item {
+    flex: 1 1 23%;
+    /* Каждый элемент занимает ~23% ширины (4 элемента в строке) */
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
     box-sizing: border-box;
-  }
-  
-  .carousel-item {
+}
+
+.carousel-item {
+    position: relative;
     transition: transform 0.5s ease-in-out;
-  }
+}
+
+.main-block {
+    position: absolute;
+    top: 50%;
+    transform: translateY( -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    font-size: 125%;
+}
+
+/* Для правого позиционирования */
+.slide-right .main-block {
+    right: 20%;
+    left: auto;
+    text-align: right;
+    color: grey;
+}
+
+/* Для левого позиционирования */
+.slide-left .main-block {
+    left: 20%;
+    right: auto;
+    text-align: left;
+    
+}
+
+.main-block button {
+    padding: 10px 20px;
+    background: #1e1e21;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.main-block button:hover {
+    background: #f8f9fa;
+    color: grey;
+}
 
 .menu {
     display: flex;
@@ -76,23 +208,28 @@
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
-  }
-  
-  .marquee-content {
+}
+
+.marquee-content {
     display: inline-block;
     animation: marquee 20s linear infinite;
-  }
-  
-  .marquee-content img {
+}
+
+.marquee-content img {
     display: inline-block;
     width: 200px;
     margin: 0 10px;
-  }
-  
-  @keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
 
 .menu-footer {
     list-style: none;
@@ -126,11 +263,13 @@
 .social-link {
     padding: 0 20px 0 20px;
 }
+
 .img-fluid {
     padding: 10px 0 10px 0;
 }
 
-a, a:hover {
+a,
+a:hover {
     text-decoration: none;
 }
 
@@ -141,20 +280,27 @@ a, a:hover {
 /* Медиа-запрос для маленьких и средних разрешений */
 @media (max-width: 768px) {
     .header {
-        flex-direction: column; /* Меняем направление на столбец */
-        align-items: flex-start; /* Выравниваем элементы по левому краю */
+        flex-direction: column;
+        /* Меняем направление на столбец */
+        align-items: flex-start;
+        /* Выравниваем элементы по левому краю */
     }
 
-    .header > div {
-        margin-bottom: 10px; /* Добавляем отступ между элементами */
+    .header>div {
+        margin-bottom: 10px;
+        /* Добавляем отступ между элементами */
         width: 100%;
     }
 
-    .header > div:last-child {
-        margin-bottom: 0; /* Убираем отступ у последнего элемента */
+    .header>div:last-child {
+        margin-bottom: 0;
+        /* Убираем отступ у последнего элемента */
     }
 
-    .sales-items, .reviews, .news , .articles {
+    .sales-items,
+    .reviews,
+    .news,
+    .articles {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -162,5 +308,3 @@ a, a:hover {
         display: none;
     }
 }
-
-
