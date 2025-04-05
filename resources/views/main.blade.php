@@ -129,18 +129,90 @@
           </button>
         </div>
         <div class="sales-items">
-          <div class="cart-item"><img src="/img/parfum/1.png" class="img-thumbnail" alt="..."></div>
-          <div class="cart-item"><img src="/img/parfum/2.png" class="img-thumbnail" alt="..."></div>
-          <div class="cart-item"><img src="/img/parfum/3.png" class="img-thumbnail" alt="..."></div>
-          <div class="cart-item"><img src="/img/parfum/4.png" class="img-thumbnail" alt="..."></div>
-          <div class="cart-item"><img src="/img/parfum/5.png" class="img-thumbnail" alt="..."></div>
-          <div class="cart-item"><img src="/img/parfum/6.png" class="img-thumbnail" alt="..."></div>
-          <div class="cart-item"><img src="/img/parfum/7.png" class="img-thumbnail" alt="..."></div>
-          <div class="cart-item"><img src="/img/parfum/8.png" class="img-thumbnail" alt="..."></div>
-          <div class="cart-item"><img src="/img/parfum/1.png" class="img-thumbnail" alt="..."></div>
-          <div class="cart-item"><img src="/img/parfum/2.png" class="img-thumbnail" alt="..."></div>
-          <div class="cart-item"><img src="/img/parfum/3.png" class="img-thumbnail" alt="..."></div>
-          <div class="cart-item"><img src="/img/parfum/4.png" class="img-thumbnail" alt="..."></div>
+          <div class="cart-item">
+            <img src="/img/parfum/1.png" class="img-thumbnail" alt="...">
+            <div class="sales-block">
+              <h2>Brend 1</h2>
+              <span>-30%</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="/img/parfum/2.png" class="img-thumbnail" alt="...">
+          <div class="sales-block">
+              <h2>Brend 2</h2>
+              <span>-30%</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="/img/parfum/3.png" class="img-thumbnail" alt="...">
+          <div class="sales-block">
+              <h2>Brend 3</h2>
+              <span>-10%</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="/img/parfum/4.png" class="img-thumbnail" alt="...">
+          <div class="sales-block">
+              <h2>Brend 4</h2>
+              <span>-20%</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="/img/parfum/5.png" class="img-thumbnail" alt="...">
+          <div class="sales-block">
+              <h2>Brend 5</h2>
+              <span>-50%</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="/img/parfum/6.png" class="img-thumbnail" alt="...">
+          <div class="sales-block">
+              <h2>Brend 6</h2>
+              <span>-18%</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
+          <div class="sales-block">
+              <h2>Brend 7</h2>
+              <span>-15%</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="/img/parfum/8.png" class="img-thumbnail" alt="...">
+          <div class="sales-block">
+              <h2>Brend 8</h2>
+              <span>-10%</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="/img/parfum/1.png" class="img-thumbnail" alt="...">
+          <div class="sales-block">
+              <h2>Brend 9</h2>
+              <span>-30%</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="/img/parfum/2.png" class="img-thumbnail" alt="...">
+            <div class="sales-block">
+              <h2>Brend 10</h2>
+              <span>-30%</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="/img/parfum/3.png" class="img-thumbnail" alt="...">
+          <div class="sales-block">
+              <h2>Brend 11</h2>
+              <span>-30%</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="/img/parfum/4.png" class="img-thumbnail" alt="...">
+          <div class="sales-block">
+              <h2>Brend 12</h2>
+              <span>-30%</span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="hits-menu">
