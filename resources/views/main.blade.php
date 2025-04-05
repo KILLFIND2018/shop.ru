@@ -9,6 +9,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -241,26 +242,194 @@
             <!-- Слайды -->
             <div class="carousel-item active">
               <div class="hits-items">
-                <div class="hit-item"><img src="/img/parfum/1.png" class="img-thumbnail" alt="..."></div>
-                <div class="hit-item"><img src="/img/parfum/2.png" class="img-thumbnail" alt="..."></div>
-                <div class="hit-item"><img src="/img/parfum/3.png" class="img-thumbnail" alt="..."></div>
-                <div class="hit-item"><img src="/img/parfum/4.png" class="img-thumbnail" alt="..."></div>
+                <div class="hit-item">
+                  <img src="/img/parfum/1.png" class="img-thumbnail" alt="...">
+                  <div class="hit-item-badges">
+                    <div class="hit-item-badges discont">Скидка 15%</div>
+                    <div class="hit-item-badges new">Новинка</div>
+                  </div>
+                  <div class="hit-item-stats">
+                    <i class="fas fa-star favorite-icon"></i>
+                    <i class="fas fa-heart review-icon"></i>
+                  </div>
+                  <div class="hit-body">
+                    <div class="hit-body-header"><h3>Brend 1 <span>Name item</span></h3></div>
+                    <div class="hit-body-price">30000 &#8381;</div>
+                  </div>
+                </div>
+                <div class="hit-item">
+                  <img src="/img/parfum/2.png" class="img-thumbnail" alt="...">
+                  <div class="hit-item-badges">
+                    <div class="hit-item-badges discont">Скидка 25%</div>
+                    <div class="hit-item-badges new">Новинка</div>
+                  </div>
+                  <div class="hit-item-stats">
+                    <i class="fas fa-star favorite-icon"></i>
+                    <i class="fas fa-heart review-icon"></i>
+                  </div>
+                  <div class="hit-body">
+                    <div class="hit-body-header"><h3>Brend 2 <span>Name item</span></h3></div>
+                    <div class="hit-body-price">2000 &#8381;</div>
+                  </div>
+                </div>
+                <div class="hit-item">
+                  <img src="/img/parfum/3.png" class="img-thumbnail" alt="...">
+                  <div class="hit-item-badges">
+                    <div class="hit-item-badges discont">Скидка 5%</div>
+                    <div class="hit-item-badges new">Новинка</div>
+                  </div>
+                  <div class="hit-item-stats">
+                    <i class="fas fa-star favorite-icon"></i>
+                    <i class="fas fa-heart review-icon"></i>
+                  </div>
+                  <div class="hit-body">
+                    <div class="hit-body-header"><h3>Brend 3 <span>Name item</span></h3></div>
+                    <div class="hit-body-price">18000 &#8381;</div>
+                  </div>
+                </div>
+                <div class="hit-item">
+                  <img src="/img/parfum/4.png" class="img-thumbnail" alt="...">
+                  <div class="hit-item-badges">
+                    <div class="hit-item-badges discont">Скидка 45%</div>
+                    <div class="hit-item-badges new">Новинка</div>
+                  </div>
+                  <div class="hit-item-stats">
+                    <i class="fas fa-star favorite-icon"></i>
+                    <i class="fas fa-heart review-icon"></i>
+                  </div>
+                  <div class="hit-body">
+                    <div class="hit-body-header"><h3>Brend 4 <span>Name item</span></h3></div>
+                    <div class="hit-body-price">5000 &#8381;</div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="hits-items">
-                <div class="hit-item"><img src="/img/parfum/7.png" class="img-thumbnail" alt="..."></div>
-                <div class="hit-item"><img src="/img/parfum/8.png" class="img-thumbnail" alt="..."></div>
-                <div class="hit-item"><img src="/img/parfum/1.png" class="img-thumbnail" alt="..."></div>
-                <div class="hit-item"><img src="/img/parfum/2.png" class="img-thumbnail" alt="..."></div>
+                <div class="hit-item">
+                  <img src="/img/parfum/7.png" class="img-thumbnail" alt="...">
+                  <div class="hit-item-badges">
+                    <div class="hit-item-badges discont">Скидка 85%</div>
+                    <div class="hit-item-badges new">Новинка</div>
+                  </div>
+                  <div class="hit-item-stats">
+                    <i class="fas fa-star favorite-icon"></i>
+                    <i class="fas fa-heart review-icon"></i>
+                  </div>
+                  <div class="hit-body">
+                    <div class="hit-body-header"><h3>Brend 5 <span>Name item</span></h3></div>
+                    <div class="hit-body-price">30000 &#8381;</div>
+                  </div>
+                </div>
+                <div class="hit-item">
+                  <img src="/img/parfum/8.png" class="img-thumbnail" alt="...">
+                  <div class="hit-item-badges">
+                    <div class="hit-item-badges discont">Скидка 15%</div>
+                    <div class="hit-item-badges new">Новинка</div>
+                  </div>
+                  <div class="hit-item-stats">
+                    <i class="fas fa-star favorite-icon"></i>
+                    <i class="fas fa-heart review-icon"></i>
+                  </div>
+                  <div class="hit-body">
+                    <div class="hit-body-header"><h3>Brend 6 <span>Name item</span></h3></div>
+                    <div class="hit-body-price">30000 &#8381;</div>
+                  </div>
+                </div>
+                <div class="hit-item">
+                  <img src="/img/parfum/1.png" class="img-thumbnail" alt="...">
+                  <div class="hit-item-badges">
+                    <div class="hit-item-badges discont">Скидка 15%</div>
+                    <div class="hit-item-badges new">Новинка</div>
+                  </div>
+                  <div class="hit-item-stats">
+                    <i class="fas fa-star favorite-icon"></i>
+                    <i class="fas fa-heart review-icon"></i>
+                  </div>
+                  <div class="hit-body">
+                    <div class="hit-body-header"><h3>Brend 7 <span>Name item</span></h3></div>
+                    <div class="hit-body-price">30000 &#8381;</div>
+                  </div>
+                </div>
+                <div class="hit-item">
+                  <img src="/img/parfum/2.png" class="img-thumbnail" alt="...">
+                  <div class="hit-item-badges">
+                    <div class="hit-item-badges discont">Скидка 15%</div>
+                    <div class="hit-item-badges new">Новинка</div>
+                  </div>
+                  <div class="hit-item-stats">
+                    <i class="fas fa-star favorite-icon"></i>
+                    <i class="fas fa-heart review-icon"></i>
+                  </div>
+                  <div class="hit-body">
+                    <div class="hit-body-header"><h3>Brend 8 <span>Name item</span></h3></div>
+                    <div class="hit-body-price">30000 &#8381;</div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="hits-items">
-                <div class="hit-item"><img src="/img/parfum/1.png" class="img-thumbnail" alt="..."></div>
-                <div class="hit-item"><img src="/img/parfum/2.png" class="img-thumbnail" alt="..."></div>
-                <div class="hit-item"><img src="/img/parfum/3.png" class="img-thumbnail" alt="..."></div>
-                <div class="hit-item"><img src="/img/parfum/4.png" class="img-thumbnail" alt="..."></div>
+                <div class="hit-item">
+                  <img src="/img/parfum/1.png" class="img-thumbnail" alt="...">
+                  <div class="hit-item-badges">
+                    <div class="hit-item-badges discont">Скидка 15%</div>
+                    <div class="hit-item-badges new">Новинка</div>
+                  </div>
+                  <div class="hit-item-stats">
+                    <i class="fas fa-star favorite-icon"></i>
+                    <i class="fas fa-heart review-icon"></i>
+                  </div>
+                  <div class="hit-body">
+                    <div class="hit-body-header"><h3>Brend 9 <span>Name item</span></h3></div>
+                    <div class="hit-body-price">30000 &#8381;</div>
+                  </div>
+                </div>
+                <div class="hit-item">
+                  <img src="/img/parfum/2.png" class="img-thumbnail" alt="...">
+                  <div class="hit-item-badges">
+                    <div class="hit-item-badges discont">Скидка 15%</div>
+                    <div class="hit-item-badges new">Новинка</div>
+                  </div>
+                  <div class="hit-item-stats">
+                    <i class="fas fa-star favorite-icon"></i>
+                    <i class="fas fa-heart review-icon"></i>
+                  </div>
+                  <div class="hit-body">
+                    <div class="hit-body-header"><h3>Brend 10 <span>Name item</span></h3></div>
+                    <div class="hit-body-price">30000 &#8381;</div>
+                  </div>
+                </div>
+                <div class="hit-item">
+                  <img src="/img/parfum/3.png" class="img-thumbnail" alt="...">
+                  <div class="hit-item-badges">
+                    <div class="hit-item-badges discont">Скидка 15%</div>
+                    <div class="hit-item-badges new">Новинка</div>
+                  </div>
+                  <div class="hit-item-stats">
+                    <i class="fas fa-star favorite-icon"></i>
+                    <i class="fas fa-heart review-icon"></i>
+                  </div>
+                  <div class="hit-body">
+                    <div class="hit-body-header"><h3>Brend 11 <span>Name item</span></h3></div>
+                    <div class="hit-body-price">30000 &#8381;</div>
+                  </div>
+                </div>
+                <div class="hit-item">
+                  <img src="/img/parfum/4.png" class="img-thumbnail" alt="...">
+                  <div class="hit-item-badges">
+                    <div class="hit-item-badges discont">Скидка 15%</div>
+                    <div class="hit-item-badges new">Новинка</div>
+                  </div>
+                  <div class="hit-item-stats">
+                    <i class="fas fa-star favorite-icon"></i>
+                    <i class="fas fa-heart review-icon"></i>
+                  </div>
+                  <div class="hit-body">
+                    <div class="hit-body-header"><h3>Brend 12 <span>Name item</span></h3></div>
+                    <div class="hit-body-price">30000 &#8381;</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
