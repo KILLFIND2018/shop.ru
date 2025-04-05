@@ -236,8 +236,9 @@
 
 .menu-link.active {
     color: #160404;
-    border-bottom: 3px rgb(124, 6, 6) solid;
-    padding: 5px 10px 0px 10px;
+    border-bottom: 3px solid rgb(124, 6, 6);
+    padding: 5px 10px 0;
+    cursor: pointer;
 }
 
 
@@ -331,6 +332,7 @@
 
 .menu-link {
     color: grey;
+    cursor: pointer;
 }
 
 .marquee-container {
@@ -405,6 +407,11 @@ a:hover {
 .acc-btn {
     color: white !important;
 }
+
+/* Скрытие неактивных каруселей */
+.carousel:not(.show) {
+    display: none;
+  }
 
 /* Медиа-запрос для маленьких и средних разрешений */
 @media (max-width: 768px) {
@@ -482,6 +489,8 @@ a:hover {
     font-size: 18px;
   }
 }
+
+
 
 @media (max-width: 480px) {
     /* Дополнительные правки для очень маленьких экранов */
