@@ -143,7 +143,7 @@
     color: aqua;
 }
 
-.hits-items {
+.hits-items, .new-items {
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -256,6 +256,56 @@
     border-bottom: 3px solid rgb(124, 6, 6);
     padding: 5px 10px 0;
     cursor: pointer;
+}
+
+.menu-gender {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+#btn-4cols, #btn-5cols {
+    width: 20px;
+    height: auto;
+    margin: 0 10px 0px 10px;
+}
+
+.dropdown {
+   padding:  0 10px 0px 10px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+#filter {
+    color: #000;
+    background-color: white;
+    border: none;
+    text-align: left;
+}
+
+.new-menu-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.controls-show {
+    display: flex;
+    align-items: center;
+}
+
+.new-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
 
 
