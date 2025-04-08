@@ -25,7 +25,7 @@
 .sales-items,
 .reviews,
 .news,
-.articles {
+.articles, .new-items {
     display: grid;
     gap: 10px;
     /* Расстояние между элементами */
@@ -143,7 +143,7 @@
     color: aqua;
 }
 
-.hits-items, .new-items {
+.hits-items {
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -266,11 +266,6 @@
     list-style: none;
 }
 
-#btn-4cols, #btn-5cols {
-    width: 20px;
-    height: auto;
-    margin: 0 10px 0px 10px;
-}
 
 .dropdown {
    padding:  0 10px 0px 10px;
@@ -279,7 +274,7 @@
 .filter {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 100%;
 }
 
 #filter {
@@ -305,10 +300,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    width: 100%;
+    padding: 1%;
 }
 
 
+
+.filter-block {
+    width: 100%;
+}
 
 .favorite-icon {
     color: #ffd700;
@@ -573,6 +573,11 @@ a:hover {
       float: left;
     }
 
+    .new-items {
+        grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    }
+
+
     .social {
       display: flex;
       width: 100%;
@@ -589,6 +594,10 @@ a:hover {
     .hit-item {
         flex: 1 1 100%;
         /* На очень узких экранах - 1 элемент */
+    }
+
+    .new-items {
+        grid-template-columns: 1fr; /* 1 колонка */
     }
 
     .hit-item-stats {
