@@ -9,7 +9,5 @@ class MainController extends Controller
         return view('main.index', ['title' => 'Главная']);
     }
 
-    public function new() {
-        return view('main.new', ['title' => 'Новинки']);
-    }
+
 }

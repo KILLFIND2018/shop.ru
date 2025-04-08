@@ -7,21 +7,12 @@
 </div>
 <div class="new-menu-container">
     <div class="new-menu">
-        <ul class="menu-gender">
-            <li class="menu-item">
-                <a class="menu-link active" data-target="">Все</a>
-            </li>
-            <li class="menu-item">
-                <a class="menu-link" data-target="">Женские</a>
-            </li>
-            <li class="menu-item">
-                <a class="menu-link" data-target="">Мужские</a>
-            </li>
-            <li class="menu-item">
-                <a class="menu-link" data-target="">Унисекс</a>
-            </li>
+        <ul class="new-menu">
+            <li><a class="nav-link {{ Request::routeIs('new') ? 'active' : ''}}" href="{{ route('new') }}">Все</a></li>
+            <li><a class="nav-link {{ Request::routeIs('new_men') ? 'active' : ''}}" href="{{ route('new_men') }}">Мужские</a></li>
+            <li><a class="nav-link {{ Request::routeIs('new_women') ? 'active' : ''}}" href="{{ route('new_women') }}">Женские</a></li>
+            <li><a class="nav-link {{ Request::routeIs('new_unisex') ? 'active' : ''}}" href="{{ route('new_unisex') }}">Унисекс</a></li>
         </ul>
-
     </div>
 
     <div class="controls-show">

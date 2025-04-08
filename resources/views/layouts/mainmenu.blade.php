@@ -36,10 +36,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link {{ Request::routeIs('new') ? 'active' : ''}}" aria-current="page" href="{{ route('new') }}">Новинки</a>
+                  <a class="nav-link {{ Request::routeIs('new') ||  Request::routeIs('new_men') ? 'active' : ''}}" aria-current="page" href="{{ route('new') }}">Новинки</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Парфюмерия</a>
+                  <a class="nav-link" href="">Парфюмерия</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Уход</a>
