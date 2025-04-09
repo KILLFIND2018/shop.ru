@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\Care\IndexController as CareIndexController;
+use App\Http\Controllers\Care\MenController as CareMenController;
+use App\Http\Controllers\Care\UnisexController as CareUnisexController;
+use App\Http\Controllers\Care\WomenController as CareWomenController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\New\IndexController;
 use App\Http\Controllers\New\MenController;
@@ -25,4 +29,9 @@ Route::group([], function () {
     Route::get('/parfum/men', [ParfumMenController::class, 'men'])->name('parfum_men');
     Route::get('/parfum/women', [ParfumWomenController::class, 'women'])->name('parfum_women');
     Route::get('/parfum/unisex', [ParfumUnisexController::class, 'unisex'])->name('parfum_unisex');
+
+    Route::get('/care', [CareIndexController::class, 'index'])->name('care');
+    Route::get('/care/men', [CareMenController::class, 'men'])->name('care_men');
+    Route::get('/care/women', [CareWomenController::class, 'women'])->name('care_women');
+    Route::get('/care/unisex', [CareUnisexController::class, 'unisex'])->name('care_unisex');
 });

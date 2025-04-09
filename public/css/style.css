@@ -25,7 +25,7 @@
 .sales-items,
 .reviews,
 .news,
-.articles, .new-items, .parfum-items {
+.articles, .new-items, .parfum-items, .care-items {
     display: grid;
     gap: 10px;
     /* Расстояние между элементами */
@@ -181,7 +181,7 @@
 .discont,
 .new,
 .sale,
-.promo, .parfum {
+.promo, .parfum, .care {
     color: white;
     padding: 6px 12px;
     font-size: 14px;
@@ -197,7 +197,7 @@
     background-color: red;
 }
 
-.new, .parfum {
+.new, .parfum, .care {
     background-color: #692413;
 }
 
@@ -258,14 +258,14 @@
     cursor: pointer;
 }
 
-.new-menu, .parfum-menu {
+.new-menu, .parfum-menu, .care-menu {
     display: flex;
     flex-direction: row;
     list-style: none;
     padding: 5px;
 }
 
-.new-menu>li , .parfum-menu>li{
+.new-menu>li , .parfum-menu>li, .care-menu>li{
    margin:  0px 20px 0px 20px;
 }
 
@@ -287,7 +287,7 @@
     text-align: left;
 }
 
-.new-menu-container, .parfum-menu-container  {
+.new-menu-container, .parfum-menu-container , .care-menu-container {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -302,7 +302,7 @@
     align-items: center;
 }
 
-.new-container, .parfum-container {
+.new-container, .parfum-container , .care-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -554,7 +554,7 @@ a:hover {
     .new,
     .sale,
     .promo,
-    .parfum {
+    .parfum, .care {
         font-size: 10px;
         padding: 4px 8px;
         clip-path: polygon(100% 0%, 95% 50%, 100% 100%, 0 100%, 0 0);
@@ -580,7 +580,7 @@ a:hover {
       float: left;
     }
 
-    .new-items, .parfum-items {
+    .new-items, .parfum-items, .care-items {
         grid-template-columns: repeat(2, 1fr); /* 2 колонки */
     }
 
@@ -603,7 +603,7 @@ a:hover {
         /* На очень узких экранах - 1 элемент */
     }
 
-    .new-items, .parfum-items {
+    .new-items, .parfum-items, .care-items {
         grid-template-columns: 1fr; /* 1 колонка */
     }
 

@@ -42,7 +42,7 @@
                   <a class="nav-link {{ Request::routeIs('parfum') ||  Request::routeIs('parfum_men') || Request::routeIs('parfum_women') || Request::routeIs('parfum_unisex') ? 'active' : ''}}" href="{{ route('parfum') }}">Парфюмерия</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Уход</a>
+                  <a class="nav-link {{ Request::routeIs('care') ||  Request::routeIs('care_men') || Request::routeIs('care_women') || Request::routeIs('care_unisex') ? 'active' : ''}}" href="{{ route('care') }}">Уход</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Косметика</a>
