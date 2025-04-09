@@ -45,7 +45,7 @@
                   <a class="nav-link {{ Request::routeIs('care') ||  Request::routeIs('care_men') || Request::routeIs('care_women') || Request::routeIs('care_unisex') ? 'active' : ''}}" href="{{ route('care') }}">Уход</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Косметика</a>
+                  <a class="nav-link {{ Request::routeIs('cosmetic')  ? 'active' : ''}}" href="{{ route('cosmetic') }}">Косметика</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Акции</a>

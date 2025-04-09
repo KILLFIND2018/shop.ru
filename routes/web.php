@@ -4,6 +4,7 @@ use App\Http\Controllers\Care\IndexController as CareIndexController;
 use App\Http\Controllers\Care\MenController as CareMenController;
 use App\Http\Controllers\Care\UnisexController as CareUnisexController;
 use App\Http\Controllers\Care\WomenController as CareWomenController;
+use App\Http\Controllers\Cosmetic\IndexController as CosmeticIndexController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\New\IndexController;
 use App\Http\Controllers\New\MenController;
@@ -34,4 +35,6 @@ Route::group([], function () {
     Route::get('/care/men', [CareMenController::class, 'men'])->name('care_men');
     Route::get('/care/women', [CareWomenController::class, 'women'])->name('care_women');
     Route::get('/care/unisex', [CareUnisexController::class, 'unisex'])->name('care_unisex');
+
+    Route::get('/cosmetic', [CosmeticIndexController::class, 'index'])->name('cosmetic');
 });
