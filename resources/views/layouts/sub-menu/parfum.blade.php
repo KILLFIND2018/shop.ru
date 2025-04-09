@@ -1,13 +1,13 @@
-<div class="new-header">
-    <h1>Новинки парфюмерии и косметики</h1>
+<div class="parfum-header">
+    <h1>{{ $title}}</h1>
 </div>
-<div class="new-menu-container">
-    <div class="new-menu">
-        <ul class="new-menu">
-            <li><a class="sub-nav-link {{ Request::routeIs('new') ? 'active' : ''}}" href="{{ route('new') }}">Все</a></li>
-            <li><a class="sub-nav-link {{ Request::routeIs('new_men') ? 'active' : ''}}" href="{{ route('new_men') }}">Мужские</a></li>
-            <li><a class="sub-nav-link {{ Request::routeIs('new_women') ? 'active' : ''}}" href="{{ route('new_women') }}">Женские</a></li>
-            <li><a class="sub-nav-link {{ Request::routeIs('new_unisex') ? 'active' : ''}}" href="{{ route('new_unisex') }}">Унисекс</a></li>
+<div class="parfum-menu-container">
+    <div class="parfum-menu">
+        <ul class="parfum-menu">
+            <li><a class="sub-nav-link {{ Request::routeIs('parfum') ? 'active' : ''}}" href="{{ route('parfum') }}">Все</a></li>
+            <li><a class="sub-nav-link {{ Request::routeIs('parfum_men') ? 'active' : ''}}" href="{{ route('parfum_men') }}">Мужские</a></li>
+            <li><a class="sub-nav-link {{ Request::routeIs('parfum_women') ? 'active' : ''}}" href="{{ route('parfum_women') }}">Женские</a></li>
+            <li><a class="sub-nav-link {{ Request::routeIs('parfum_unisex') ? 'active' : ''}}" href="{{ route('parfum_unisex') }}">Унисекс</a></li>
         </ul>
     </div>
 

@@ -2,16 +2,17 @@
 @include('layouts.mainmenu')
 
 
-@include('layouts.sub-menu.new')
+@include('layouts.sub-menu.parfum')
 
-@include('layouts.filter-block.new')
+@include('layouts.filter-block.parfum')
 
-    <div class="new-items">
+
+    <div class="parfum-items">
         <div class="hit-item">
             <img src="/img/parfum/1.png" class="img-thumbnail" alt="...">
             <div class="hit-item-badges">
               <div class="hit-item-badges discont">Скидка 15%</div>
-              <div class="hit-item-badges new">Новинка</div>
+              <div class="hit-item-badges parfum">Новинка</div>
             </div>
             <div class="hit-item-stats">
               <i class="fas fa-star favorite-icon"></i>
@@ -28,7 +29,7 @@
             <img src="/img/parfum/1.png" class="img-thumbnail" alt="...">
             <div class="hit-item-badges">
               <div class="hit-item-badges discont">Скидка 15%</div>
-              <div class="hit-item-badges new">Новинка</div>
+              <div class="hit-item-badges parfum">Новинка</div>
             </div>
             <div class="hit-item-stats">
               <i class="fas fa-star favorite-icon"></i>
@@ -45,7 +46,7 @@
             <img src="/img/parfum/1.png" class="img-thumbnail" alt="...">
             <div class="hit-item-badges">
               <div class="hit-item-badges discont">Скидка 15%</div>
-              <div class="hit-item-badges new">Новинка</div>
+              <div class="hit-item-badges parfum">Новинка</div>
             </div>
             <div class="hit-item-stats">
               <i class="fas fa-star favorite-icon"></i>
@@ -62,7 +63,7 @@
             <img src="/img/parfum/1.png" class="img-thumbnail" alt="...">
             <div class="hit-item-badges">
               <div class="hit-item-badges discont">Скидка 15%</div>
-              <div class="hit-item-badges new">Новинка</div>
+              <div class="hit-item-badges parfum">Новинка</div>
             </div>
             <div class="hit-item-stats">
               <i class="fas fa-star favorite-icon"></i>
@@ -79,7 +80,7 @@
             <img src="/img/parfum/1.png" class="img-thumbnail" alt="...">
             <div class="hit-item-badges">
               <div class="hit-item-badges discont">Скидка 15%</div>
-              <div class="hit-item-badges new">Новинка</div>
+              <div class="hit-item-badges parfum">Новинка</div>
             </div>
             <div class="hit-item-stats">
               <i class="fas fa-star favorite-icon"></i>

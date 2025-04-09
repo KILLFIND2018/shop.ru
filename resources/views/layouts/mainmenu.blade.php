@@ -39,7 +39,7 @@
                   <a class="nav-link {{ Request::routeIs('new') ||  Request::routeIs('new_men') || Request::routeIs('new_women') || Request::routeIs('new_unisex') ? 'active' : ''}}" aria-current="page" href="{{ route('new') }}">Новинки</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="">Парфюмерия</a>
+                  <a class="nav-link {{ Request::routeIs('parfum') ||  Request::routeIs('parfum_men') || Request::routeIs('parfum_women') || Request::routeIs('parfum_unisex') ? 'active' : ''}}" href="{{ route('parfum') }}">Парфюмерия</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Уход</a>
