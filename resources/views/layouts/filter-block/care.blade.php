@@ -45,16 +45,6 @@
                 </div>
             </div>
 
-            <!-- Особенности флакона -->
-            <button id = "filter" class="btn btn-primary mb-2" type="button" data-bs-toggle="collapse"
-                data-bs-target="#bottleCollapse" aria-expanded="false" aria-controls="bottleCollapse">
-                Особенности флакона
-            </button>
-            <div class="collapse mb-3" id="bottleCollapse">
-                <div class="card card-body">
-                    Описание дизайна и особенностей флакона
-                </div>
-            </div>
 
             <!-- Страна -->
             <button id = "filter" class="btn btn-primary mb-2" type="button" data-bs-toggle="collapse"
@@ -67,27 +57,9 @@
                 </div>
             </div>
 
-            <!-- Год издания -->
-            <button id = "filter" class="btn btn-primary mb-2" type="button" data-bs-toggle="collapse"
-                data-bs-target="#yearCollapse" aria-expanded="false" aria-controls="yearCollapse">
-                Год издания
-            </button>
-            <div class="collapse mb-3" id="yearCollapse">
-                <div class="card card-body">
-                    Год выпуска аромата
-                </div>
-            </div>
 
-            <!-- Ноты -->
-            <button id = "filter" class="btn btn-primary mb-2" type="button" data-bs-toggle="collapse"
-                data-bs-target="#notesCollapse" aria-expanded="false" aria-controls="notesCollapse">
-                Ноты
-            </button>
-            <div class="collapse mb-3" id="notesCollapse">
-                <div class="card card-body">
-                    Пирамида аромата: начальные, сердечные и базовые ноты
-                </div>
-            </div>
+
+
 
             <!-- Цена -->
             <button id = "filter" class="btn btn-primary mb-2" type="button" data-bs-toggle="collapse"
