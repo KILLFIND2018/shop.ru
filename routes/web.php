@@ -14,6 +14,7 @@ use App\Http\Controllers\Parfum\IndexController as ParfumIndexController;
 use App\Http\Controllers\Parfum\MenController as ParfumMenController;
 use App\Http\Controllers\Parfum\UnisexController as ParfumUnisexController;
 use App\Http\Controllers\Parfum\WomenController as ParfumWomenController;
+use App\Http\Controllers\Promo\IndexController as PromoIndexController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -37,4 +38,6 @@ Route::group([], function () {
     Route::get('/care/unisex', [CareUnisexController::class, 'unisex'])->name('care_unisex');
 
     Route::get('/cosmetic', [CosmeticIndexController::class, 'index'])->name('cosmetic');
+
+    Route::get('/promo', [PromoIndexController::class, 'index'])->name('promo');
 });
