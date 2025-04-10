@@ -25,7 +25,11 @@
 .sales-items,
 .reviews,
 .news,
-.articles, .new-items, .parfum-items, .care-items, .cosmetic-items {
+.articles,
+.new-items,
+.parfum-items,
+.care-items,
+.cosmetic-items, .sale-items {
     display: grid;
     gap: 10px;
     /* Расстояние между элементами */
@@ -43,28 +47,28 @@
 .promo-item {
     position: relative;
     overflow: hidden;
-  }
+}
 
-  .promo-link {
+.promo-link {
     display: block;
     position: relative;
     width: 100%;
     height: 100%;
     text-decoration: none;
     color: inherit;
-  }
+}
 
-  .promo-link:hover .promo-block {
+.promo-link:hover .promo-block {
     background: rgba(121, 128, 24, 0.7);
-  }
+}
 
-  .promo-link:hover h4 {
+.promo-link:hover h4 {
     color: #fff;
-  }
+}
 
-  .promo-block {
+.promo-block {
     transition: all 0.3s ease;
-  }
+}
 
 .cart-item {
     position: relative;
@@ -215,7 +219,10 @@
 .discont,
 .new,
 .sale,
-.promo, .parfum, .care, .cosmetic {
+.promo,
+.parfum,
+.care,
+.cosmetic, .sale {
     color: white;
     padding: 6px 12px;
     font-size: 14px;
@@ -231,7 +238,10 @@
     background-color: red;
 }
 
-.new, .parfum, .care, .cosmetic {
+.new,
+.parfum,
+.care,
+.cosmetic, .sale {
     background-color: #692413;
 }
 
@@ -285,27 +295,34 @@
     font-weight: bolder;
 }
 
-.menu-link.active, .sub-nav-link.active, .nav-link.active  {
+.menu-link.active,
+.sub-nav-link.active,
+.nav-link.active {
     color: #160404;
     border-bottom: 3px solid rgb(124, 6, 6);
     padding: 5px 10px 0;
     cursor: pointer;
 }
 
-.new-menu, .parfum-menu, .care-menu {
+.new-menu,
+.parfum-menu,
+.care-menu, .sale-menu {
     display: flex;
     flex-direction: row;
     list-style: none;
     padding: 5px;
 }
 
-.new-menu>li , .parfum-menu>li, .care-menu>li{
-   margin:  0px 20px 0px 20px;
+.new-menu>li,
+.parfum-menu>li,
+.care-menu>li,
+.sale-menu>li {
+    margin: 0px 20px 0px 20px;
 }
 
 
 .dropdown {
-   padding:  0 10px 0px 10px;
+    padding: 0 10px 0px 10px;
 }
 
 .filter {
@@ -321,7 +338,10 @@
     text-align: left;
 }
 
-.new-menu-container, .parfum-menu-container , .care-menu-container , .cosmetic-menu-container{
+.new-menu-container,
+.parfum-menu-container,
+.care-menu-container,
+.cosmetic-menu-container, .sale-menu-container {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -336,7 +356,10 @@
     align-items: center;
 }
 
-.new-container, .parfum-container , .care-container, .cosmetic-container{
+.new-container,
+.parfum-container,
+.care-container,
+.cosmetic-container, .sale-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -441,7 +464,9 @@
     margin: 0 5px 0 5px;
 }
 
-.menu-link, .sub-nav-link, .nav-link  {
+.menu-link,
+.sub-nav-link,
+.nav-link {
     color: grey;
     cursor: pointer;
 }
@@ -509,9 +534,9 @@
 }
 
 .social img {
-  width: 30px;
-  height: auto;
-  float: left;
+    width: 30px;
+    height: auto;
+    float: left;
 }
 
 .img-fluid {
@@ -592,7 +617,9 @@ a:hover {
     .new,
     .sale,
     .promo,
-    .parfum, .care, .cosmetic {
+    .parfum,
+    .care,
+    .cosmetic, .sale {
         font-size: 10px;
         padding: 4px 8px;
         clip-path: polygon(100% 0%, 95% 50%, 100% 100%, 0 100%, 0 0);
@@ -615,20 +642,24 @@ a:hover {
     }
 
     .social img {
-      float: left;
+        float: left;
     }
 
-    .new-items, .parfum-items, .care-items, .cosmetic-items {
-        grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    .new-items,
+    .parfum-items,
+    .care-items,
+    .cosmetic-items, .sale-items {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 колонки */
     }
 
 
     .social {
-      display: flex;
-      width: 100%;
-      flex-direction: column;
-      justify-content: space-around;
-  }
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
 
 
@@ -641,8 +672,12 @@ a:hover {
         /* На очень узких экранах - 1 элемент */
     }
 
-    .new-items, .parfum-items, .care-items, .cosmetic-items {
-        grid-template-columns: 1fr; /* 1 колонка */
+    .new-items,
+    .parfum-items,
+    .care-items,
+    .cosmetic-items, .sale-items {
+        grid-template-columns: 1fr;
+        /* 1 колонка */
     }
 
     .hit-item-stats {
@@ -660,8 +695,8 @@ a:hover {
     }
 
     .social img {
-      width: 15%;
-      float: left;
-      height: auto;
-  }
+        width: 15%;
+        float: left;
+        height: auto;
+    }
 }
