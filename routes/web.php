@@ -15,6 +15,7 @@ use App\Http\Controllers\Parfum\IndexController as ParfumIndexController;
 use App\Http\Controllers\Parfum\MenController as ParfumMenController;
 use App\Http\Controllers\Parfum\UnisexController as ParfumUnisexController;
 use App\Http\Controllers\Parfum\WomenController as ParfumWomenController;
+use App\Http\Controllers\Parfumers\IndexController as ParfumersIndexController;
 use App\Http\Controllers\Promo\IndexController as PromoIndexController;
 use App\Http\Controllers\Sale\IndexController as SaleIndexController;
 use App\Http\Controllers\Sale\MenController as SaleMenController;
@@ -46,6 +47,7 @@ Route::group([], function () {
     Route::get('/cosmetic', [CosmeticIndexController::class, 'index'])->name('cosmetic');
     Route::get('/promo', [PromoIndexController::class, 'index'])->name('promo');
     Route::get('/brends', [IndexController::class, 'index'])->name('brends');
+    Route::get('/parfumers', [ParfumersIndexController::class, 'index'])->name('parfumers');
 
 
     Route::get('/sale', [SaleIndexController::class, 'index'])->name('sale');

@@ -45,7 +45,7 @@
         <a class="footer-menu-link" href="{{ route('parfum_unisex') }}">Унисекс</a>
       </li>
       <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Парфюмеры</a>
+        <a class="footer-menu-link" href="{{ route('parfumers') }}">Парфюмеры</a>
       </li>
       <li class="footer-menu-item">
         <a class="footer-menu-link" href="#">Ноты</a>

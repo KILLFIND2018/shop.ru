@@ -593,6 +593,15 @@ a:hover {
     border-radius: 4px;
 }
 
+/* Опционально: стилизация скроллбара */
+.selector-menu-parfumers::-webkit-scrollbar {
+    height: 4px;
+}
+.selector-menu-parfumers::-webkit-scrollbar-thumb {
+    background: #692413;
+    border-radius: 4px;
+}
+
 .abc-selector {
     display: grid;
     gap: 10px;
