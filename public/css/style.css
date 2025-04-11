@@ -557,7 +557,41 @@ a:hover {
     display: none;
 }
 
+.selector {
+    display: flex;
+    padding: 10px;
+    list-style: none;
+}
 
+.selector>li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px 0 10px;
+    border: 1px red solid;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* Опционально: стилизация скроллбара */
+.selector-menu-brands::-webkit-scrollbar {
+    height: 4px;
+}
+.selector-menu-brands::-webkit-scrollbar-thumb {
+    background: #692413;
+    border-radius: 4px;
+}
+
+.abc-selector {
+    display: grid;
+    gap: 10px;
+    /* Расстояние между элементами */
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    list-style: none;
+}
 
 /* Медиа-запрос для маленьких и средних разрешений */
 @media (max-width: 768px) {
@@ -648,7 +682,7 @@ a:hover {
     .new-items,
     .parfum-items,
     .care-items,
-    .cosmetic-items, .sale-items {
+    .cosmetic-items, .sale-items, .abc-selector {
         grid-template-columns: repeat(2, 1fr);
         /* 2 колонки */
     }
@@ -659,6 +693,26 @@ a:hover {
         width: 100%;
         flex-direction: column;
         justify-content: space-around;
+    }
+
+    .selector-menu-brands {
+        overflow-x: auto; /* Включаем горизонтальный скролл */
+        -webkit-overflow-scrolling: touch; /* Плавный скролл на iOS */
+        padding-bottom: 10px; /* Место для скроллбара */
+        width: 100%;
+    }
+
+    .selector {
+        flex-wrap: nowrap; /* Запрещаем перенос элементов */
+        width: max-content; /* Ширина по содержимому */
+        padding: 10px 5px; /* Уменьшаем боковые отступы */
+    }
+
+    .selector > li {
+        flex-shrink: 0; /* Запрещаем уменьшение элементов */
+        margin: 0 5px; /* Уменьшаем отступы между буквами */
+        width: 40px; /* Фиксированная ширина для кнопок */
+        height: 40px; /* Фиксированная высота */
     }
 }
 
@@ -675,7 +729,7 @@ a:hover {
     .new-items,
     .parfum-items,
     .care-items,
-    .cosmetic-items, .sale-items {
+    .cosmetic-items, .sale-items, .abc-selector, .promo-items {
         grid-template-columns: 1fr;
         /* 1 колонка */
     }
@@ -685,9 +739,7 @@ a:hover {
         left: 10px;
     }
 
-    .promo-items {
-        grid-template-columns: repeat(1, 1fr);
-    }
+
 
     .favorite-icon,
     .review-icon {

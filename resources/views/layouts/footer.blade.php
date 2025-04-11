@@ -128,6 +128,25 @@
   <div class="footer-dev">Магазин Shop.ru 2025г</div>
 </div>
 </div>
+<script>
+    document.querySelectorAll('.selector-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          const offset = 100; // Высота вашего меню
+          const targetPosition = targetElement.offsetTop - offset;
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+          // Обновляем URL (опционально)
+          history.pushState(null, null, targetId);
+        }
+      });
+    });
+    </script>
 <script src={{ asset('js/sub_menu.js') }}></script>
 
 

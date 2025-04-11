@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Brends\IndexController;
 use App\Http\Controllers\Care\IndexController as CareIndexController;
 use App\Http\Controllers\Care\MenController as CareMenController;
 use App\Http\Controllers\Care\UnisexController as CareUnisexController;
@@ -44,6 +45,7 @@ Route::group([], function () {
 
     Route::get('/cosmetic', [CosmeticIndexController::class, 'index'])->name('cosmetic');
     Route::get('/promo', [PromoIndexController::class, 'index'])->name('promo');
+    Route::get('/brends', [IndexController::class, 'index'])->name('brends');
 
 
     Route::get('/sale', [SaleIndexController::class, 'index'])->name('sale');

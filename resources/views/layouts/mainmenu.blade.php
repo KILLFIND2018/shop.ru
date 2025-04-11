@@ -54,7 +54,7 @@
                   <a class="nav-link {{ Request::routeIs('sale') ||  Request::routeIs('sale_men') || Request::routeIs('sale_women') || Request::routeIs('sale_unisex') ? 'active' : ''}}" href="{{ route('sale') }}">Распродажа</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Бренды</a>
+                  <a class="nav-link {{ Request::routeIs('brends')  ? 'active' : ''}}" href="{{ route('brends') }}">Бренды</a>
                 </li>
               </ul>
             </div>
