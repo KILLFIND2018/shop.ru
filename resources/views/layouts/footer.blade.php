@@ -7,22 +7,22 @@
         <a class="footer-menu-link" href="#">Контакты</a>
       </li>
       <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Новинки</a>
+        <a class="footer-menu-link" href="{{ route('new') }}">Новинки</a>
       </li>
       <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Распродажа</a>
+        <a class="footer-menu-link" href="{{ route('sale') }}">Распродажа</a>
       </li>
       <li class="footer-menu-item">
         <a class="footer-menu-link" href="#">Скидки</a>
       </li>
       <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Акции</a>
+        <a class="footer-menu-link" href="{{ route('promo') }}">Акции</a>
       </li>
       <li class="footer-menu-item">
         <a class="footer-menu-link" href="#">Подарки</a>
       </li>
       <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Бренды</a>
+        <a class="footer-menu-link" href="{{ route('brends') }}">Бренды</a>
       </li>
       <li class="footer-menu-item">
         <a class="footer-menu-link" href="#">Купоны за активность</a>
@@ -36,13 +36,13 @@
         <a class="footer-menu-link-active" aria-current="page" href="#">Парфюмерия</a>
       </li>
       <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Для женщин</a>
+        <a class="footer-menu-link" href="{{ route('parfum_women') }}">Для женщин</a>
       </li>
       <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Для мужчин</a>
+        <a class="footer-menu-link" href="{{ route('parfum_men') }}">Для мужчин</a>
       </li>
       <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Унисекс</a>
+        <a class="footer-menu-link" href="{{ route('parfum_unisex') }}">Унисекс</a>
       </li>
       <li class="footer-menu-item">
         <a class="footer-menu-link" href="#">Парфюмеры</a>
@@ -56,16 +56,16 @@
         <a class="footer-menu-link-active" aria-current="page" href="#">Уходовая косметика</a>
       </li>
       <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Для женщин</a>
+        <a class="footer-menu-link" href="{{ route('care_women') }}">Для женщин</a>
       </li>
       <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Для мужчин</a>
+        <a class="footer-menu-link" href="{{ route('care_men') }}">Для мужчин</a>
       </li>
       <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Унисекс</a>
+        <a class="footer-menu-link" href="{{ route('care_unisex') }}">Унисекс</a>
       </li>
       <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Косметика</a>
+        <a class="footer-menu-link" href="{{ route('cosmetic') }}">Косметика</a>
       </li>
     </ul>
     <ul class="menu-footer">
