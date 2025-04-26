@@ -87,7 +87,7 @@
         <a class="footer-menu-link-active" aria-current="page" href="#">Помощь</a>
       </li>
       <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Оплата</a>
+        <a class="footer-menu-link" href="{{ route('payment') }}">Оплата</a>
       </li>
       <li class="footer-menu-item">
         <a class="footer-menu-link" href="#">Доставка</a>
