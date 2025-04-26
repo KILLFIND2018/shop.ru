@@ -7,6 +7,7 @@ use App\Http\Controllers\Care\UnisexController as CareUnisexController;
 use App\Http\Controllers\Care\WomenController as CareWomenController;
 use App\Http\Controllers\Cosmetic\IndexController as CosmeticIndexController;
 use App\Http\Controllers\Main\IndexController as MainIndexController;
+use App\Http\Controllers\Main\PaymentController;
 use App\Http\Controllers\New\IndexController as NewIndexController;
 use App\Http\Controllers\New\MenController  as NewMenController;
 use App\Http\Controllers\New\UnisexController  as NewUnisexController;
@@ -27,6 +28,7 @@ use Illuminate\Support\Facades\Route;
 Route::group([], function () {
 
     Route::get('/', [MainIndexController::class, 'index'])->name('index');
+    Route::get('/payment', [PaymentController::class, 'index'])->name('payment');
 
     Route::get('/new', [NewIndexController::class, 'index'])->name('new');
     Route::get('/new/men', [NewMenController::class, 'men'])->name('new_men');
