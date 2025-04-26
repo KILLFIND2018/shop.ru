@@ -1,12 +1,12 @@
 <?php
 
-use App\Http\Controllers\Brends\IndexController;
+use App\Http\Controllers\Brends\IndexController as BrendsIndexController;
 use App\Http\Controllers\Care\IndexController as CareIndexController;
 use App\Http\Controllers\Care\MenController as CareMenController;
 use App\Http\Controllers\Care\UnisexController as CareUnisexController;
 use App\Http\Controllers\Care\WomenController as CareWomenController;
 use App\Http\Controllers\Cosmetic\IndexController as CosmeticIndexController;
-use App\Http\Controllers\MainController;
+use App\Http\Controllers\Main\IndexController as MainIndexController;
 use App\Http\Controllers\New\IndexController as NewIndexController;
 use App\Http\Controllers\New\MenController  as NewMenController;
 use App\Http\Controllers\New\UnisexController  as NewUnisexController;
@@ -26,7 +26,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::group([], function () {
 
-    Route::get('/', [MainController::class, 'index'])->name('index');
+    Route::get('/', [MainIndexController::class, 'index'])->name('index');
 
     Route::get('/new', [NewIndexController::class, 'index'])->name('new');
     Route::get('/new/men', [NewMenController::class, 'men'])->name('new_men');
@@ -46,7 +46,7 @@ Route::group([], function () {
 
     Route::get('/cosmetic', [CosmeticIndexController::class, 'index'])->name('cosmetic');
     Route::get('/promo', [PromoIndexController::class, 'index'])->name('promo');
-    Route::get('/brends', [IndexController::class, 'index'])->name('brends');
+    Route::get('/brends', [BrendsIndexController::class, 'index'])->name('brends');
     Route::get('/parfumers', [ParfumersIndexController::class, 'index'])->name('parfumers');
 
 

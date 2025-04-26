@@ -1,7 +1,6 @@
 @include('layouts.head')
 @include('layouts.mainmenu')
 
-
 <div class="selector-menu-parfums">
     <ul class = "selector">
         <li><a class="selector-link" href="#A">A</a></li>
@@ -209,4 +208,5 @@
         <li>Bfdfdfd</li>
     </ul>
   </div>
+
 @include('layouts.footer')
