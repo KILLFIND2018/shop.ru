@@ -90,7 +90,7 @@
         <a class="footer-menu-link" href="{{ route('payment') }}">Оплата</a>
       </li>
       <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Доставка</a>
+        <a class="footer-menu-link" href="{{ route('delivery') }}">Доставка</a>
       </li>
       <li class="footer-menu-item">
         <a class="footer-menu-link" href="#">Возврат</a>

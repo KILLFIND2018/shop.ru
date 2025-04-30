@@ -44,7 +44,7 @@
     justify-content: center;
 }
 
-.payment-items {
+.payment-items, .delivery-lists {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3 , 1fr);
@@ -55,6 +55,30 @@
     background-color: #e614db8a;
     border-radius: 10px;
     padding: 30px;
+}
+
+.delivery_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.delivery-top-text {
+    padding: 0 0 0 25px;
+}
+
+.delivery-top-text h3 {
+    font-size: 125%;
+}
+
+.delivery-top-text h2 {
+    font-size: 140%;
+    font-weight: bolder;
+}
+
+.delivery-main span {
+    font-size: 125%;
+    font-weight: bolder;
 }
 
 .card-text {
@@ -727,7 +751,7 @@ a:hover {
     .new-items,
     .parfum-items,
     .care-items,
-    .cosmetic-items, .sale-items, .abc-selector, .payment-items {
+    .cosmetic-items, .sale-items, .abc-selector, .payment-items, .delivery-lists {
         grid-template-columns: repeat(2, 1fr);
         /* 2 колонки */
     }
@@ -774,7 +798,7 @@ a:hover {
     .new-items,
     .parfum-items,
     .care-items,
-    .cosmetic-items, .sale-items, .abc-selector, .promo-items, .payment-items {
+    .cosmetic-items, .sale-items, .abc-selector, .promo-items, .payment-items, .delivery-lists {
         grid-template-columns: 1fr;
         /* 1 колонка */
     }

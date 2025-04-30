@@ -30,16 +30,244 @@
 
     </ul>
     <div id="msk" class="carousel slide show" data-bs-ride="carousel">
-        msc
+        <div class="delivery-lists">
+            <div class="delivery-list">
+                <div class="delivery_top">
+                    <div class="delivery_top_img">
+                        <img src="/img/delivery/delivery.svg" alt="">
+                    </div>
+                    <div class="delivery-top-text">
+                        <h3>Курьерская доставка</h3>
+                        <h2>Бесплатно</h2>
+                    </div>
+                </div>
+                <div class="delivery-main">
+                    <p>Срок доставки: <span> 1 день</span></p>
+                </div>
+            </div>
+            <div class="delivery-list">
+                <div class="delivery_top">
+                    <div class="delivery_top_img">
+                        <img src="/img/delivery/sdek.svg" alt="">
+                    </div>
+                    <div class="delivery-top-text">
+                        <h3>СДЭК</h3>
+                        <h2>Бесплатно</h2>
+                    </div>
+                </div>
+                <div class="delivery-main">
+                    <p>Срок доставки: <span> 1 день</span></p>
+                </div>
+            </div>
+            <div class="delivery-list">
+                <div class="delivery_top">
+                    <div class="delivery_top_img">
+                        <img src="/img/delivery/5post.svg" alt="">
+                    </div>
+                    <div class="delivery-top-text">
+                        <h3>5Post</h3>
+                        <h2>Бесплатно</h2>
+                    </div>
+                </div>
+                <div class="delivery-main">
+                    <p>Срок доставки: <span> 1 день</span></p>
+                </div>
+            </div>
+            <div class="delivery-list">
+                <div class="delivery_top">
+                    <div class="delivery_top_img">
+                        <img src="/img/delivery/post.svg" alt="">
+                    </div>
+                    <div class="delivery-top-text">
+                        <h3>Почта России</h3>
+                        <h2>Бесплатно</h2>
+                    </div>
+                </div>
+                <div class="delivery-main">
+                    <p>Срок доставки: <span> 1 день</span></p>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="spb" class="carousel slide" data-bs-ride="carousel">
-        spb
+        <div class="delivery-lists">
+            <div class="delivery-list">
+                <div class="delivery_top">
+                    <div class="delivery_top_img">
+                        <img src="/img/delivery/delivery.svg" alt="">
+                    </div>
+                    <div class="delivery-top-text">
+                        <h3>Курьерская доставка</h3>
+                        <h2>Бесплатно</h2>
+                    </div>
+                </div>
+                <div class="delivery-main">
+                    <p>Срок доставки: <span> 2 день</span></p>
+                </div>
+            </div>
+            <div class="delivery-list">
+                <div class="delivery_top">
+                    <div class="delivery_top_img">
+                        <img src="/img/delivery/sdek.svg" alt="">
+                    </div>
+                    <div class="delivery-top-text">
+                        <h3>СДЭК</h3>
+                        <h2>Бесплатно</h2>
+                    </div>
+                </div>
+                <div class="delivery-main">
+                    <p>Срок доставки: <span> 2 день</span></p>
+                </div>
+            </div>
+            <div class="delivery-list">
+                <div class="delivery_top">
+                    <div class="delivery_top_img">
+                        <img src="/img/delivery/5post.svg" alt="">
+                    </div>
+                    <div class="delivery-top-text">
+                        <h3>5Post</h3>
+                        <h2>Бесплатно</h2>
+                    </div>
+                </div>
+                <div class="delivery-main">
+                    <p>Срок доставки: <span> 2 день</span></p>
+                </div>
+            </div>
+            <div class="delivery-list">
+                <div class="delivery_top">
+                    <div class="delivery_top_img">
+                        <img src="/img/delivery/post.svg" alt="">
+                    </div>
+                    <div class="delivery-top-text">
+                        <h3>Почта России</h3>
+                        <h2>Бесплатно</h2>
+                    </div>
+                </div>
+                <div class="delivery-main">
+                    <p>Срок доставки: <span> 2 день</span></p>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="nnov" class="carousel slide" data-bs-ride="carousel">
-        nnov
+        <div class="delivery-lists">
+            <div class="delivery-list">
+                <div class="delivery_top">
+                    <div class="delivery_top_img">
+                        <img src="/img/delivery/delivery.svg" alt="">
+                    </div>
+                    <div class="delivery-top-text">
+                        <h3>Курьерская доставка</h3>
+                        <h2>Бесплатно</h2>
+                    </div>
+                </div>
+                <div class="delivery-main">
+                    <p>Срок доставки: <span> 10 день</span></p>
+                </div>
+            </div>
+            <div class="delivery-list">
+                <div class="delivery_top">
+                    <div class="delivery_top_img">
+                        <img src="/img/delivery/sdek.svg" alt="">
+                    </div>
+                    <div class="delivery-top-text">
+                        <h3>СДЭК</h3>
+                        <h2>Бесплатно</h2>
+                    </div>
+                </div>
+                <div class="delivery-main">
+                    <p>Срок доставки: <span> 10 день</span></p>
+                </div>
+            </div>
+            <div class="delivery-list">
+                <div class="delivery_top">
+                    <div class="delivery_top_img">
+                        <img src="/img/delivery/5post.svg" alt="">
+                    </div>
+                    <div class="delivery-top-text">
+                        <h3>5Post</h3>
+                        <h2>Бесплатно</h2>
+                    </div>
+                </div>
+                <div class="delivery-main">
+                    <p>Срок доставки: <span> 10 день</span></p>
+                </div>
+            </div>
+            <div class="delivery-list">
+                <div class="delivery_top">
+                    <div class="delivery_top_img">
+                        <img src="/img/delivery/post.svg" alt="">
+                    </div>
+                    <div class="delivery-top-text">
+                        <h3>Почта России</h3>
+                        <h2>Бесплатно</h2>
+                    </div>
+                </div>
+                <div class="delivery-main">
+                    <p>Срок доставки: <span> 8 день</span></p>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="krd" class="carousel slide" data-bs-ride="carousel">
-        krd
+        <div class="delivery-lists">
+            <div class="delivery-list">
+                <div class="delivery_top">
+                    <div class="delivery_top_img">
+                        <img src="/img/delivery/delivery.svg" alt="">
+                    </div>
+                    <div class="delivery-top-text">
+                        <h3>Курьерская доставка</h3>
+                        <h2>Бесплатно</h2>
+                    </div>
+                </div>
+                <div class="delivery-main">
+                    <p>Срок доставки: <span> 8 день</span></p>
+                </div>
+            </div>
+            <div class="delivery-list">
+                <div class="delivery_top">
+                    <div class="delivery_top_img">
+                        <img src="/img/delivery/sdek.svg" alt="">
+                    </div>
+                    <div class="delivery-top-text">
+                        <h3>СДЭК</h3>
+                        <h2>Бесплатно</h2>
+                    </div>
+                </div>
+                <div class="delivery-main">
+                    <p>Срок доставки: <span> 7 день</span></p>
+                </div>
+            </div>
+            <div class="delivery-list">
+                <div class="delivery_top">
+                    <div class="delivery_top_img">
+                        <img src="/img/delivery/5post.svg" alt="">
+                    </div>
+                    <div class="delivery-top-text">
+                        <h3>5Post</h3>
+                        <h2>Бесплатно</h2>
+                    </div>
+                </div>
+                <div class="delivery-main">
+                    <p>Срок доставки: <span> 3 день</span></p>
+                </div>
+            </div>
+            <div class="delivery-list">
+                <div class="delivery_top">
+                    <div class="delivery_top_img">
+                        <img src="/img/delivery/post.svg" alt="">
+                    </div>
+                    <div class="delivery-top-text">
+                        <h3>Почта России</h3>
+                        <h2>Бесплатно</h2>
+                    </div>
+                </div>
+                <div class="delivery-main">
+                    <p>Срок доставки: <span> 4 день</span></p>
+                </div>
+            </div>
+        </div>
     </div>
 
   </div>
