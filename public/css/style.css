@@ -44,7 +44,7 @@
     justify-content: center;
 }
 
-.payment-items, .delivery-lists {
+.payment-items, .delivery-lists, .worktime-items {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3 , 1fr);
@@ -79,6 +79,15 @@
 .delivery-main span {
     font-size: 125%;
     font-weight: bolder;
+}
+
+.worktime-item img {
+    width: 50%;
+    height: auto;
+}
+
+.worktime-item span {
+    font-weight: bold;
 }
 
 .card-text {
@@ -689,7 +698,7 @@ a:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .promo-items {
+    .promo-items, .worktime-items {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -798,7 +807,7 @@ a:hover {
     .new-items,
     .parfum-items,
     .care-items,
-    .cosmetic-items, .sale-items, .abc-selector, .promo-items, .payment-items, .delivery-lists {
+    .cosmetic-items, .sale-items, .abc-selector, .promo-items, .payment-items, .delivery-lists, .worktime-items {
         grid-template-columns: 1fr;
         /* 1 колонка */
     }

@@ -96,7 +96,7 @@
         <a class="footer-menu-link" href="{{ route('refund') }}">Возврат</a>
       </li>
       <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">График работы</a>
+        <a class="footer-menu-link" href="{{ route('worktime') }}">График работы</a>
       </li>
       <li class="footer-menu-item">
         <a class="footer-menu-link" href="#">Карта сайта</a>
