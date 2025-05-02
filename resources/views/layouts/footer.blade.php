@@ -102,10 +102,10 @@
         <a class="footer-menu-link" href="{{ route('sitemap') }}">Карта сайта</a>
       </li>
       <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Политика конфидециальности</a>
+        <a class="footer-menu-link" href="{{ route('rules') }}">Политика конфидециальности</a>
       </li>
       <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Договор оферты</a>
+        <a class="footer-menu-link" href="{{ route('offer') }}">Договор оферты</a>
       </li>
     </ul>
   </div>

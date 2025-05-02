@@ -8,6 +8,7 @@ use App\Http\Controllers\Care\WomenController as CareWomenController;
 use App\Http\Controllers\Cosmetic\IndexController as CosmeticIndexController;
 use App\Http\Controllers\Main\DeliveryController;
 use App\Http\Controllers\Main\IndexController as MainIndexController;
+use App\Http\Controllers\Main\OfferController;
 use App\Http\Controllers\Main\PaymentController;
 use App\Http\Controllers\Main\RefundController;
 use App\Http\Controllers\Main\RulesController;
@@ -39,6 +40,7 @@ Route::group([], function () {
     Route::get('/worktime', [WorktimeController::class, 'index'])->name('worktime');
     Route::get('/sitemap', [SitemapController::class, 'index'])->name('sitemap');
     Route::get('/rules', [RulesController::class, 'index'])->name('rules');
+    Route::get('/offer', [OfferController::class, 'index'])->name('offer');
 
 
     Route::get('/new', [NewIndexController::class, 'index'])->name('new');
