@@ -93,10 +93,10 @@
         <a class="footer-menu-link" href="{{ route('delivery') }}">Доставка</a>
       </li>
       <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Возврат</a>
+        <a class="footer-menu-link" href="{{ route('refund') }}">Возврат</a>
       </li>
       <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Грфик работы</a>
+        <a class="footer-menu-link" href="#">График работы</a>
       </li>
       <li class="footer-menu-item">
         <a class="footer-menu-link" href="#">Карта сайта</a>
