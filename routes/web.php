@@ -6,6 +6,7 @@ use App\Http\Controllers\Care\MenController as CareMenController;
 use App\Http\Controllers\Care\UnisexController as CareUnisexController;
 use App\Http\Controllers\Care\WomenController as CareWomenController;
 use App\Http\Controllers\Cosmetic\IndexController as CosmeticIndexController;
+use App\Http\Controllers\Main\AboutController;
 use App\Http\Controllers\Main\DeliveryController;
 use App\Http\Controllers\Main\IndexController as MainIndexController;
 use App\Http\Controllers\Main\OfferController;
@@ -41,6 +42,7 @@ Route::group([], function () {
     Route::get('/sitemap', [SitemapController::class, 'index'])->name('sitemap');
     Route::get('/rules', [RulesController::class, 'index'])->name('rules');
     Route::get('/offer', [OfferController::class, 'index'])->name('offer');
+    Route::get('/about', [AboutController::class, 'index'])->name('about');
 
 
     Route::get('/new', [NewIndexController::class, 'index'])->name('new');

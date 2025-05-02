@@ -44,7 +44,7 @@
     justify-content: center;
 }
 
-.payment-items, .delivery-lists, .worktime-items {
+.payment-items, .delivery-lists, .worktime-items, .about-items {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3 , 1fr);
@@ -604,6 +604,29 @@ a:hover {
     color: white !important;
 }
 
+.about-logo, .about-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-logo p {
+    font-size: 175%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about-item p {
+    font-size: 150%;
+    text-align: center;
+}
+
+.about-logo img, .about-item img {
+    width: 50%;
+    height: auto;
+}
+
 /* Скрытие неактивных каруселей */
 .carousel:not(.show) {
     display: none;
@@ -698,7 +721,7 @@ a:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .promo-items, .worktime-items, .sitemap-items {
+    .promo-items, .worktime-items, .sitemap-items, .about-items {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -765,6 +788,15 @@ a:hover {
         /* 2 колонки */
     }
 
+    .about-logo p {
+        font-size: 100%
+    }
+
+
+    .about-logo img {
+        width: 40%;
+        height: auto;
+    }
 
     .social {
         display: flex;
@@ -807,7 +839,7 @@ a:hover {
     .new-items,
     .parfum-items,
     .care-items,
-    .cosmetic-items, .sale-items, .abc-selector, .promo-items, .payment-items, .delivery-lists, .worktime-items, .sitemap-items {
+    .cosmetic-items, .sale-items, .abc-selector, .promo-items, .payment-items, .delivery-lists, .worktime-items, .sitemap-items, .about-items {
         grid-template-columns: 1fr;
         /* 1 колонка */
     }
@@ -817,6 +849,14 @@ a:hover {
         left: 10px;
     }
 
+    .about-logo p {
+        font-size: 100%
+    }
+
+    .about-logo img {
+        width: 20%;
+        height: auto;
+    }
 
 
     .favorite-icon,
