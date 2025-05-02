@@ -10,6 +10,7 @@ use App\Http\Controllers\Main\DeliveryController;
 use App\Http\Controllers\Main\IndexController as MainIndexController;
 use App\Http\Controllers\Main\PaymentController;
 use App\Http\Controllers\Main\RefundController;
+use App\Http\Controllers\Main\RulesController;
 use App\Http\Controllers\Main\SitemapController;
 use App\Http\Controllers\Main\WorktimeController;
 use App\Http\Controllers\New\IndexController as NewIndexController;
@@ -37,7 +38,7 @@ Route::group([], function () {
     Route::get('/refund', [RefundController::class, 'index'])->name('refund');
     Route::get('/worktime', [WorktimeController::class, 'index'])->name('worktime');
     Route::get('/sitemap', [SitemapController::class, 'index'])->name('sitemap');
-
+    Route::get('/rules', [RulesController::class, 'index'])->name('rules');
 
 
     Route::get('/new', [NewIndexController::class, 'index'])->name('new');

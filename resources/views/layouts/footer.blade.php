@@ -99,7 +99,7 @@
         <a class="footer-menu-link" href="{{ route('worktime') }}">График работы</a>
       </li>
       <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Карта сайта</a>
+        <a class="footer-menu-link" href="{{ route('sitemap') }}">Карта сайта</a>
       </li>
       <li class="footer-menu-item">
         <a class="footer-menu-link" href="#">Политика конфидециальности</a>
