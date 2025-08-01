@@ -13,13 +13,13 @@
             <a class="footer-menu-link" href="{{ route('sale') }}">Распродажа</a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#">Скидки</a>
+            <a class="footer-menu-link" href="{{ route('discounts') }}">Скидки</a>
           </li>
           <li class="footer-menu-item">
             <a class="footer-menu-link" href="{{ route('promo') }}">Акции</a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#">Подарки</a>
+            <a class="footer-menu-link" href="{{ route('presents') }}">Подарки</a>
           </li>
           <li class="footer-menu-item">
             <a class="footer-menu-link" href="{{ route('brends') }}">Бренды</a>

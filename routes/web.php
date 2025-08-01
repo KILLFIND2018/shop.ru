@@ -9,6 +9,7 @@ use App\Http\Controllers\Cosmetic\IndexController as CosmeticIndexController;
 use App\Http\Controllers\Main\AboutController;
 use App\Http\Controllers\Main\ContactsController;
 use App\Http\Controllers\Main\DeliveryController;
+use App\Http\Controllers\Main\DiscountController;
 use App\Http\Controllers\Main\IndexController as MainIndexController;
 use App\Http\Controllers\Main\OfferController;
 use App\Http\Controllers\Main\PaymentController;
@@ -51,6 +52,7 @@ Route::group([], function () {
     Route::get('/brends', [BrendsIndexController::class, 'index'])->name('brends');
     Route::get('/parfumers', [ParfumersIndexController::class, 'index'])->name('parfumers');
     Route::get('/presents', [PresentsController::class, 'index'])->name('presents');
+    Route::get('/discounts', [DiscountController::class, 'index'])->name('discounts');
 
 
     Route::prefix('/new')->group(function (){
