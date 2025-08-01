@@ -25,7 +25,7 @@
             <a class="footer-menu-link" href="{{ route('brends') }}">Бренды</a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#">Купоны за активность</a>
+            <a class="footer-menu-link" href="{{ route('coupons') }}">Купоны за активность</a>
           </li>
           <li class="footer-menu-item">
             <a class="footer-menu-link" href="#">Подарочные сертификаты</a>

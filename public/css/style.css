@@ -29,7 +29,7 @@
 .new-items,
 .parfum-items,
 .care-items,
-.cosmetic-items, .sale-items {
+.cosmetic-items, .sale-items, .coupon-items {
     display: grid;
     gap: 10px;
     /* Расстояние между элементами */

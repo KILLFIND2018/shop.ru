@@ -8,6 +8,7 @@ use App\Http\Controllers\Care\WomenController as CareWomenController;
 use App\Http\Controllers\Cosmetic\IndexController as CosmeticIndexController;
 use App\Http\Controllers\Main\AboutController;
 use App\Http\Controllers\Main\ContactsController;
+use App\Http\Controllers\Main\CouponController;
 use App\Http\Controllers\Main\DeliveryController;
 use App\Http\Controllers\Main\DiscountController;
 use App\Http\Controllers\Main\IndexController as MainIndexController;
@@ -53,6 +54,7 @@ Route::group([], function () {
     Route::get('/parfumers', [ParfumersIndexController::class, 'index'])->name('parfumers');
     Route::get('/presents', [PresentsController::class, 'index'])->name('presents');
     Route::get('/discounts', [DiscountController::class, 'index'])->name('discounts');
+    Route::get('/coupons', [CouponController::class, 'index'])->name('coupons');
 
 
     Route::prefix('/new')->group(function (){
