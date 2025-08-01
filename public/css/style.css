@@ -36,7 +36,7 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
-.promo-items, .sitemap-items, .presents-items {
+.promo-items, .sitemap-items, .presents-items, .certificate-items {
     display: grid;
     gap: 10px;
     /* Расстояние между элементами */
@@ -97,7 +97,7 @@
     font-size: 1em;
 }
 
-.promo-item {
+.promo-item, .certificate-item {
     position: relative;
     overflow: hidden;
 }
@@ -370,12 +370,12 @@
 .parfum-menu>li,
 .care-menu>li,
 .sale-menu>li {
-    margin: 0px 20px 0px 20px;
+    margin: 0 20px 0 20px;
 }
 
 
 .dropdown {
-    padding: 0 10px 0px 10px;
+    padding: 0 10px 0 10px;
 }
 
 .filter {
@@ -722,7 +722,7 @@ a:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .promo-items, .worktime-items, .sitemap-items, .about-items {
+    .promo-items, .worktime-items, .sitemap-items, .about-items, .certificate-items {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -840,7 +840,7 @@ a:hover {
     .new-items,
     .parfum-items,
     .care-items,
-    .cosmetic-items, .sale-items, .abc-selector, .promo-items, .payment-items, .delivery-lists, .worktime-items, .sitemap-items, .about-items, .presents-items {
+    .cosmetic-items, .sale-items, .abc-selector, .promo-items, .payment-items, .delivery-lists, .worktime-items, .sitemap-items, .about-items, .presents-items, .certificate-items {
         grid-template-columns: 1fr;
         /* 1 колонка */
     }

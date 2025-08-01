@@ -28,12 +28,12 @@
             <a class="footer-menu-link" href="{{ route('coupons') }}">Купоны за активность</a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#">Подарочные сертификаты</a>
+            <a class="footer-menu-link" href="{{ route('certificates') }}">Подарочные сертификаты</a>
           </li>
         </ul>
         <ul class="menu-footer">
           <li class="footer-menu-item">
-            <a class="footer-menu-link-active" aria-current="page" href="#">Парфюмерия</a>
+            <a class="footer-menu-link-active" aria-current="page" href="{{ route('parfum') }}">Парфюмерия</a>
           </li>
           <li class="footer-menu-item">
             <a class="footer-menu-link" href="{{ route('parfum_women') }}">Для женщин</a>
@@ -53,7 +53,7 @@
         </ul>
         <ul class="menu-footer">
           <li class="footer-menu-item">
-            <a class="footer-menu-link-active" aria-current="page" href="#">Уходовая косметика</a>
+            <a class="footer-menu-link-active" aria-current="page" href="{{ route('care') }}">Уходовая косметика</a>
           </li>
           <li class="footer-menu-item">
             <a class="footer-menu-link" href="{{ route('care_women') }}">Для женщин</a>
