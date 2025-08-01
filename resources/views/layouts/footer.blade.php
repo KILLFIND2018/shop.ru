@@ -1,132 +1,132 @@
-<div class="footer">
-    <ul class="menu-footer">
-      <li class="footer-menu-item">
-        <a class="footer-menu-link-active" aria-current="page" href="#">О магазине</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Контакты</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="{{ route('new') }}">Новинки</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="{{ route('sale') }}">Распродажа</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Скидки</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="{{ route('promo') }}">Акции</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Подарки</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="{{ route('brends') }}">Бренды</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Купоны за активность</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Подарочные сертификаты</a>
-      </li>
-    </ul>
-    <ul class="menu-footer">
-      <li class="footer-menu-item">
-        <a class="footer-menu-link-active" aria-current="page" href="#">Парфюмерия</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="{{ route('parfum_women') }}">Для женщин</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="{{ route('parfum_men') }}">Для мужчин</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="{{ route('parfum_unisex') }}">Унисекс</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="{{ route('parfumers') }}">Парфюмеры</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Ноты</a>
-      </li>
-    </ul>
-    <ul class="menu-footer">
-      <li class="footer-menu-item">
-        <a class="footer-menu-link-active" aria-current="page" href="#">Уходовая косметика</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="{{ route('care_women') }}">Для женщин</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="{{ route('care_men') }}">Для мужчин</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="{{ route('care_unisex') }}">Унисекс</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="{{ route('cosmetic') }}">Косметика</a>
-      </li>
-    </ul>
-    <ul class="menu-footer">
-      <li class="footer-menu-item">
-        <a class="footer-menu-link-active" aria-current="page" href="#">Информация</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Отзывы</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Новости</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="#">Статьи</a>
-      </li>
-    </ul>
-    <ul class="menu-footer">
-      <li class="footer-menu-item">
-        <a class="footer-menu-link-active" aria-current="page" href="#">Помощь</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="{{ route('payment') }}">Оплата</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="{{ route('delivery') }}">Доставка</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="{{ route('refund') }}">Возврат</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="{{ route('worktime') }}">График работы</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="{{ route('sitemap') }}">Карта сайта</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="{{ route('rules') }}">Политика конфидециальности</a>
-      </li>
-      <li class="footer-menu-item">
-        <a class="footer-menu-link" href="{{ route('offer') }}">Договор оферты</a>
-      </li>
-    </ul>
-  </div>
-  <div class="feedback">
-    <h3>Связь с нами</h3>
-    8-495-888-88-88
-    <br>
-    8-800-123-45-56
-    <br>
-    info@shop.ru
-  </div>
-  <div class="social-header">
-    <h3>Мессенджеры</h3>
-  </div>
-  <div class="social">
-    <a href="http://" class="social-link"><img class = "social" src="/img/social/vk.svg" alt="">Группа в ВК</a>
-    <a href="http://" class="social-link"><img class = "social" src="/img/social/tg.svg" alt="">Telegram-канал</a>
-    <a href="http://" class="social-link"><img class = "social" src="/img/social/tg.svg" alt="">Telegram-бот</a>
-  </div>
-  <div class="footer-dev">Магазин Shop.ru 2025г</div>
-</div>
+    <div class="footer">
+        <ul class="menu-footer">
+          <li class="footer-menu-item">
+            <a class="footer-menu-link-active" aria-current="page" href="#">О магазине</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="{{ route('contacts') }}">Контакты</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="{{ route('new') }}">Новинки</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="{{ route('sale') }}">Распродажа</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#">Скидки</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="{{ route('promo') }}">Акции</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#">Подарки</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="{{ route('brends') }}">Бренды</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#">Купоны за активность</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#">Подарочные сертификаты</a>
+          </li>
+        </ul>
+        <ul class="menu-footer">
+          <li class="footer-menu-item">
+            <a class="footer-menu-link-active" aria-current="page" href="#">Парфюмерия</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="{{ route('parfum_women') }}">Для женщин</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="{{ route('parfum_men') }}">Для мужчин</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="{{ route('parfum_unisex') }}">Унисекс</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="{{ route('parfumers') }}">Парфюмеры</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#">Ноты</a>
+          </li>
+        </ul>
+        <ul class="menu-footer">
+          <li class="footer-menu-item">
+            <a class="footer-menu-link-active" aria-current="page" href="#">Уходовая косметика</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="{{ route('care_women') }}">Для женщин</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="{{ route('care_men') }}">Для мужчин</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="{{ route('care_unisex') }}">Унисекс</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="{{ route('cosmetic') }}">Косметика</a>
+          </li>
+        </ul>
+        <ul class="menu-footer">
+          <li class="footer-menu-item">
+            <a class="footer-menu-link-active" aria-current="page" href="#">Информация</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#">Отзывы</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#">Новости</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#">Статьи</a>
+          </li>
+        </ul>
+        <ul class="menu-footer">
+          <li class="footer-menu-item">
+            <a class="footer-menu-link-active" aria-current="page" href="#">Помощь</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="{{ route('payment') }}">Оплата</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="{{ route('delivery') }}">Доставка</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="{{ route('refund') }}">Возврат</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="{{ route('worktime') }}">График работы</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="{{ route('sitemap') }}">Карта сайта</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="{{ route('rules') }}">Политика конфидециальности</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="{{ route('offer') }}">Договор оферты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="feedback">
+        <h3>Связь с нами</h3>
+        8-495-888-88-88
+        <br>
+        8-800-123-45-56
+        <br>
+        info@shop.ru
+      </div>
+      <div class="social-header">
+        <h3>Мессенджеры</h3>
+      </div>
+      <div class="social">
+        <a href="http://" class="social-link"><img class = "social" src="/img/social/vk.svg" alt="">Группа в ВК</a>
+        <a href="http://" class="social-link"><img class = "social" src="/img/social/tg.svg" alt="">Telegram-канал</a>
+        <a href="http://" class="social-link"><img class = "social" src="/img/social/tg.svg" alt="">Telegram-бот</a>
+      </div>
+      <div class="footer-dev">Магазин Shop.ru 2025г</div>
+    </div>
 </div>
 <script>
     document.querySelectorAll('.selector-link').forEach(link => {

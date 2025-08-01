@@ -61,7 +61,7 @@
           <div class="hit-item">
             <img src="/img/parfum/1.png" class="img-thumbnail" alt="...">
             <div class="hit-item-badges">
-              <div class="hit-item-badges discont">Скидка 15%</div>
+              <div class="hit-item-badges discont">Скидка 30%</div>
               <div class="hit-item-badges new">Новинка</div>
             </div>
             <div class="hit-item-stats">

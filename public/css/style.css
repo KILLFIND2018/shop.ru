@@ -36,12 +36,13 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
-.promo-items, .sitemap-items {
+.promo-items, .sitemap-items, .presents-items {
     display: grid;
     gap: 10px;
     /* Расстояние между элементами */
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+    justify-items: center;
 }
 
 .payment-items, .delivery-lists, .worktime-items, .about-items {
@@ -783,7 +784,7 @@ a:hover {
     .new-items,
     .parfum-items,
     .care-items,
-    .cosmetic-items, .sale-items, .abc-selector, .payment-items, .delivery-lists {
+    .cosmetic-items, .sale-items, .abc-selector, .payment-items, .delivery-lists, .presents-items {
         grid-template-columns: repeat(2, 1fr);
         /* 2 колонки */
     }
@@ -839,7 +840,7 @@ a:hover {
     .new-items,
     .parfum-items,
     .care-items,
-    .cosmetic-items, .sale-items, .abc-selector, .promo-items, .payment-items, .delivery-lists, .worktime-items, .sitemap-items, .about-items {
+    .cosmetic-items, .sale-items, .abc-selector, .promo-items, .payment-items, .delivery-lists, .worktime-items, .sitemap-items, .about-items, .presents-items {
         grid-template-columns: 1fr;
         /* 1 колонка */
     }
