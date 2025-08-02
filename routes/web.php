@@ -24,6 +24,7 @@ use App\Http\Controllers\New\IndexController as NewIndexController;
 use App\Http\Controllers\New\MenController  as NewMenController;
 use App\Http\Controllers\New\UnisexController  as NewUnisexController;
 use App\Http\Controllers\New\WomenController  as NewWomenController;
+use App\Http\Controllers\News\NewsController;
 use App\Http\Controllers\Parfum\IndexController as ParfumIndexController;
 use App\Http\Controllers\Parfum\MenController as ParfumMenController;
 use App\Http\Controllers\Parfum\UnisexController as ParfumUnisexController;
@@ -58,6 +59,9 @@ Route::group([], function () {
     Route::get('/coupons', [CouponController::class, 'index'])->name('coupons');
     Route::get('/certificates', [CertificateController::class, 'index'])->name('certificates');
 
+    Route::prefix('/news')->group( function () {
+        Route::get('/', [NewsController::class, 'index'])->name('news');
+    });
 
     Route::prefix('/new')->group(function (){
         Route::get('/', [NewIndexController::class, 'index'])->name('new');
