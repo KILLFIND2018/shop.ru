@@ -73,13 +73,13 @@
             <a class="footer-menu-link-active" aria-current="page" href="#">Информация</a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#">Отзывы</a>
+            <a class="footer-menu-link" href="{{ route('reviews') }}">Отзывы</a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#">Новости</a>
+            <a class="footer-menu-link" href="{{ route('news') }}">Новости</a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#">Статьи</a>
+            <a class="footer-menu-link" href="{{ route('articles') }}">Статьи</a>
           </li>
         </ul>
         <ul class="menu-footer">

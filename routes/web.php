@@ -25,12 +25,14 @@ use App\Http\Controllers\New\MenController  as NewMenController;
 use App\Http\Controllers\New\UnisexController  as NewUnisexController;
 use App\Http\Controllers\New\WomenController  as NewWomenController;
 use App\Http\Controllers\News\NewsController;
+use App\Http\Controllers\Articles\IndexController as ArticlesIndexController;
 use App\Http\Controllers\Parfum\IndexController as ParfumIndexController;
 use App\Http\Controllers\Parfum\MenController as ParfumMenController;
 use App\Http\Controllers\Parfum\UnisexController as ParfumUnisexController;
 use App\Http\Controllers\Parfum\WomenController as ParfumWomenController;
 use App\Http\Controllers\Parfumers\IndexController as ParfumersIndexController;
 use App\Http\Controllers\Promo\IndexController as PromoIndexController;
+use App\Http\Controllers\Reviews\IndexController as ReviewsIndexController;
 use App\Http\Controllers\Sale\IndexController as SaleIndexController;
 use App\Http\Controllers\Sale\MenController as SaleMenController;
 use App\Http\Controllers\Sale\WomenController as SaleWomenController;
@@ -59,9 +61,19 @@ Route::group([], function () {
     Route::get('/coupons', [CouponController::class, 'index'])->name('coupons');
     Route::get('/certificates', [CertificateController::class, 'index'])->name('certificates');
 
+    /*CRUD*/
     Route::prefix('/news')->group( function () {
         Route::get('/', [NewsController::class, 'index'])->name('news');
     });
+
+    Route::prefix('/reviews')->group( function () {
+        Route::get('/', [ReviewsIndexController::class, 'index'])->name('reviews');
+    });
+
+    Route::prefix('/articles')->group( function () {
+        Route::get('/', [ArticlesIndexController::class, 'index'])->name('articles');
+    });
+
 
     Route::prefix('/new')->group(function (){
         Route::get('/', [NewIndexController::class, 'index'])->name('new');
