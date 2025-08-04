@@ -26,6 +26,7 @@ use App\Http\Controllers\New\UnisexController  as NewUnisexController;
 use App\Http\Controllers\New\WomenController  as NewWomenController;
 use App\Http\Controllers\News\NewsController;
 use App\Http\Controllers\Articles\IndexController as ArticlesIndexController;
+use App\Http\Controllers\Notes\IndexController as NotesIndexController;
 use App\Http\Controllers\Parfum\IndexController as ParfumIndexController;
 use App\Http\Controllers\Parfum\MenController as ParfumMenController;
 use App\Http\Controllers\Parfum\UnisexController as ParfumUnisexController;
@@ -60,6 +61,7 @@ Route::group([], function () {
     Route::get('/discounts', [DiscountController::class, 'index'])->name('discounts');
     Route::get('/coupons', [CouponController::class, 'index'])->name('coupons');
     Route::get('/certificates', [CertificateController::class, 'index'])->name('certificates');
+    Route::get('/notes', [NotesIndexController::class, 'index'])->name('notes');
 
     /*CRUD*/
     Route::prefix('/news')->group( function () {

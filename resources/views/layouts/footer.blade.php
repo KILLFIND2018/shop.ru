@@ -48,7 +48,7 @@
             <a class="footer-menu-link" href="{{ route('parfumers') }}">Парфюмеры</a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#">Ноты</a>
+            <a class="footer-menu-link" href="{{ route('notes') }}">Ноты</a>
           </li>
         </ul>
         <ul class="menu-footer">
