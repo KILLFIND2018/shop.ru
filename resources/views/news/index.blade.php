@@ -5,26 +5,22 @@
     <h1>{{ $title}}</h1>
 </div>
 <div class="news-items">
-    <div class="news-item">
-        30 мая 1258
-        <br>
-        Продумать так картинка и дата и новость
-    </div>
-    <div class="news-item">
-        30 мая 1258
-        <br>
-        DFGBBNBDDBdfnbidbndbn
-    </div>
-    <div class="news-item">
-        30 мая 1258
-        <br>
-        DFGBBNBDDBdfnbidbndbn
-    </div>
-    <div class="news-item">
-        30 мая 1258
-        <br>
-        DFGBBNBDDBdfnbidbndbn
-    </div>
+
+
+
+    @foreach($news as $arrnews)
+        <div class="news-item">
+            {{ $arrnews->id }}
+            {{ $arrnews->img }}
+            {{ \Carbon\Carbon::parse($arrnews->date)->translatedFormat('j F Y')}}
+            {{ $arrnews->title }}
+            {{ $arrnews->short_content }}
+            {{ $arrnews->content }}
+            {{ $arrnews->url }}
+
+        </div>
+    @endforeach
+
 </div>
 
 
