@@ -13,12 +13,11 @@ return new class extends Migration
     {
         Schema::create('news', function (Blueprint $table) {
             $table->id();
-            $table->string('img');
+            $table->string('img_path');
             $table->string('title');
             $table->date('date');
-            $table->text('short-content');
             $table->text('content');
-            $table->string('url');
+            $table->string('url_news');
             $table->boolean('is_published')->default(1);
             $table->timestamps();
             $table->softDeletes();

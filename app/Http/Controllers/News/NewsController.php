@@ -7,11 +7,14 @@ use App\Models\News;
 
 class NewsController extends Controller
 {
-    public function index()
+    public function __invoke()
     {
-        $news = News::all();
+        $news = News::paginate(10);
 
 
-        return view('news.index', ['title' => 'Новости'], compact('news'));
+        return view('news.index', [
+            'title' => 'Новости',
+            'news' => $news,
+            ]);
     }
 }

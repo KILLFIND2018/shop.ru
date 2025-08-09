@@ -6,20 +6,24 @@
 </div>
 <div class="news-items">
 
-
-
-    @foreach($news as $arrnews)
+    @forelse ($news as $item)
         <div class="news-item">
-            {{ $arrnews->id }}
-            {{ $arrnews->img }}
-            {{ \Carbon\Carbon::parse($arrnews->date)->translatedFormat('j F Y')}}
-            {{ $arrnews->title }}
-            {{ $arrnews->short_content }}
-            {{ $arrnews->content }}
-            {{ $arrnews->url }}
-
+            <h2>{{ $item->title }}</h2>
+            <p>{{ \Carbon\Carbon::parse($item->date)->translatedFormat('j F Y')}}</p>
+            <p>{{ Str::limit($item->content, 200) }}</p>
+            @if ($item->img_path)
+                <img src="{{ Storage::url($item->img_path) }}" alt="{{ $item->title }}" width="200">
+            @endif
+            @if ($item->url_news)
+                <a href="{{ $item->url_news }}">Read more</a>
+            @endif
+            <p>Published: {{ $item->is_published ? 'Yes' : 'No' }}</p>
         </div>
-    @endforeach
+    @empty
+        <p>No news available.</p>
+    @endforelse
+
+
 
 </div>
 
