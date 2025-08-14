@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\IndexController;
 use App\Http\Controllers\Brends\IndexController as BrendsIndexController;
 use App\Http\Controllers\Care\IndexController as CareIndexController;
 use App\Http\Controllers\Care\MenController as CareMenController;
@@ -62,6 +63,10 @@ Route::group([], function () {
     Route::get('/coupons', [CouponController::class, 'index'])->name('coupons');
     Route::get('/certificates', [CertificateController::class, 'index'])->name('certificates');
     Route::get('/notes', [NotesIndexController::class, 'index'])->name('notes');
+
+    Route::prefix('/admin')->group( function () {
+        Route::get('/', IndexController::class)->name('admin');
+    });
 
     /*CRUD*/
     Route::prefix('/news')->group( function () {

@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Bounded';
+    src: url(/fonts/Bounded-Regular.ttf);
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    height: 100%;
+    padding: 0;
+}
+
+.admin-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+}
+
+.header {
+    /* Добавьте фиксированную высоту, если нужно, например: */
+    /* height: 60px; */
+    background-color: green;
+    width: 100%;
+    display: flex;
+}
+
+.logo-header {
+    background-color: #692413;
+    width: 25%;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Bounded';
+}
+.bar-header {
+    background-color: #9c371b;
+    width: 75%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.bar-header>a {
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.container {
+    flex: 1; /* Занимает все оставшееся пространство */
+    overflow: auto; /* Если контент переполняется, добавьте прокрутку */
+    background-color: #1a4ed0;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+
+    display: flex;
+
+}
+
+.dashboard-item img {
+    width: 40px;
+    height: auto;
+    margin: 5px;
+}
+
+.menu-bar {
+    background-color: #1a202c;
+    width: 25%;
+}
+
+.user-container>h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.user-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 0 30px;
+}
+
+.user-links>a, .dashboard-item>a, .dashboard-sub-item>a, .dropdown-menu>a, .dropdown-toggle{
+    text-decoration: none;
+    color:red !important; /* измени*/
+}
+
+.dashboard-item {
+    padding-left: 20px;
+    margin: 5px;
+    border: 2px red solid;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.dropdown-menu {
+    width: 75%;
+    border-radius: 5px;
+    border: 2px red solid;
+    margin: 5px;
+    padding-left: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.main-container {
+    background-color: #2d3748;
+    width: 75%;
+}
+
+.footer {
+    /* Добавьте фиксированную высоту, если нужно, например: */
+    /* height: 50px; */
+    background-color: #9c159c;
+}
