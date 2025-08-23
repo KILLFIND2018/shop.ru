@@ -64,9 +64,7 @@ Route::group([], function () {
     Route::get('/certificates', [CertificateController::class, 'index'])->name('certificates');
     Route::get('/notes', [NotesIndexController::class, 'index'])->name('notes');
 
-    Route::prefix('/admin')->group( function () {
-        Route::get('/', IndexController::class)->name('admin');
-    });
+
 
     /*CRUD*/
     Route::prefix('/news')->group( function () {

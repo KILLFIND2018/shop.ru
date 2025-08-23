@@ -120,6 +120,38 @@ html, body {
     width: 75%;
 }
 
+.main-container>h1, .main-container>button {
+    margin-left: 4%;
+}
+
+.news-table {
+    width: 100%;
+    padding: 0 15px 0 15px;
+}
+
+.news-crud {
+    width: 100%;
+    text-align: center;
+}
+
+.news-crud th , .news-crud td, .news-crud {
+    border: 2px solid darkgrey;
+}
+
+.info-td {
+    width: 20%;
+}
+
+.editor {
+    width: 40%;
+}
+
+.table-crud-btn>img {
+    width: 24px;
+    height: auto;
+    margin: 5px;
+}
+
 .footer {
     /* Добавьте фиксированную высоту, если нужно, например: */
     /* height: 50px; */
