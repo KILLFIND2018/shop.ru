@@ -37,7 +37,13 @@
                             <img src="/img/admin_icons/crud_img/Eye.svg" alt="">
                             <span>Preview</span>
                         </a>
-                        <button type="button" class="btn btn-light table-crud-btn"><img src="/img/admin_icons/crud_img/Edit.svg" alt="">Edit</button>
+                        <a href="{{route('admin.news.edit', $item->id)}}"
+                           class="btn btn-light table-crud-btn"
+                           role="button">
+                            <img src="/img/admin_icons/crud_img/Edit.svg" alt="">
+                            <span>Edit</span>
+                        </a>
+
                         <button type="button" class="btn btn-light table-crud-btn"><img src="/img/admin_icons/crud_img/Delete.svg" alt="">Delete</button>
                     </td>
                 </tr>

@@ -69,8 +69,6 @@ Route::group([], function () {
     /*CRUD*/
     Route::prefix('/news')->group( function () {
         Route::get('/', NewsController::class)->name('news');
-        //Route::get('/create', CreateController::class)->name('news.create');
-        //Route::post('/', StoreController::class)->name('news.store');
     });
 
     Route::prefix('/reviews')->group( function () {
