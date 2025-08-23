@@ -123,7 +123,7 @@ html, body {
     width: 75%;
 }
 
-.main-container>h1, .main-container>button {
+.main-container>h1, .table-crud-btn {
     margin-left: 4%;
 }
 
