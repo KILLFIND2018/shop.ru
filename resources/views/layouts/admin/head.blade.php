@@ -31,7 +31,7 @@
                 </div>
                 <div class="dashboard-container">
                     <div class="dashboard-item"><a class = "nav-admin {{ Request::routeIs('admin')  ? 'active' : ''}}" href="{{ route('admin') }}"><img src="/img/admin_icons/DashboardOutlined.svg" alt="">Dashboard</a></div>
-                    <div class="dashboard-item"><a class = "nav-admin {{ Request::routeIs('admin.news.index')  ? 'active' : ''}}" href="{{ route('admin.news.index') }}"><img src="/img/admin_icons/Newspaper.svg" alt="">Новости</a></div>
+                    <div class="dashboard-item"><a class = "nav-admin {{ Request::routeIs('admin.news.index') || Request::routeIs('admin.news.create')  ? 'active' : ''}}" href="{{ route('admin.news.index') }}"><img src="/img/admin_icons/Newspaper.svg" alt="">Новости</a></div>
                     <div class="dashboard-item"><a href=""><img src="/img/admin_icons/ArticlesRtl.svg" alt="">Статьи</a></div>
                     <div class="dashboard-item"><a href=""><img src="/img/admin_icons/Review.svg" alt="">Отзывы</a></div>
                     <div class="nav-item dropdown">

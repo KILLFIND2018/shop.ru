@@ -4,7 +4,13 @@
     <h1>Управление новостями</h1>
     <br>
     <br>
-    <button type="button" class="btn btn-light table-crud-btn"><img src="/img/admin_icons/crud_img/Plus.svg" alt="">Create</button>
+    <button type="button"
+            class="btn btn-light table-crud-btn"
+            onclick="window.location.href='{{ route('admin.news.create') }}'"
+            aria-label="Create new news item">
+        <img src="/img/admin_icons/crud_img/Plus.svg" alt="">
+        Create
+    </button>
     <br>
     <br>
     <div class="news-table">
