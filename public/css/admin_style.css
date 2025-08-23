@@ -92,6 +92,9 @@ html, body {
     color:red !important; /* измени*/
 }
 
+.nav-admin.active{
+    color: yellow !important;
+}
 .dashboard-item {
     padding-left: 20px;
     margin: 5px;
