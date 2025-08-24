@@ -39,13 +39,6 @@
                 @enderror
             </div>
             <div class="form-group">
-                <label for="url_news">URL News</label>
-                <input type="text" class="form-control" id="url_news" name="url_news" placeholder="URL News" value="{{ old('url_news', $news->url_news) }}">
-                @error('url_news')
-                <div class="text-danger">{{ $message }}</div>
-                @enderror
-            </div>
-            <div class="form-group">
                 <label for="is_published">Published</label>
                 <input type="checkbox" id="is_published" name="is_published" value="1" {{ old('is_published', $news->is_published) ? 'checked' : '' }}>
                 @error('is_published')

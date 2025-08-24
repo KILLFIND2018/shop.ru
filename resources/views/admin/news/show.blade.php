@@ -7,9 +7,6 @@
             @if ($news->img_path)
                 <img src="{{ Storage::url($news->img_path) }}" alt="{{ $news->title }}" width="200">
             @endif
-            @if ($news->url_news)
-                <a href="{{ $news->url_news }}">Read more</a>
-            @endif
             <p>Published: {{ $news->is_published ? 'Yes' : 'No' }}</p>
         </div>
         <br>

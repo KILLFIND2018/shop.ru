@@ -14,9 +14,8 @@
             @if ($item->img_path)
                 <img src="{{ Storage::url($item->img_path) }}" alt="{{ $item->title }}" width="200">
             @endif
-            @if ($item->url_news)
-                <a href="{{ $item->url_news }}">Read more</a>
-            @endif
+                <a href="{{ route('news.show', $item->id) }}">Read more</a>
+
             <p>Published: {{ $item->is_published ? 'Yes' : 'No' }}</p>
         </div>
     @empty
