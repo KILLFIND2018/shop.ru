@@ -27,6 +27,7 @@ use App\Http\Controllers\New\UnisexController  as NewUnisexController;
 use App\Http\Controllers\New\WomenController  as NewWomenController;
 use App\Http\Controllers\News\NewsController;
 use App\Http\Controllers\Articles\IndexController as ArticlesIndexController;
+use App\Http\Controllers\Articles\ShowController as ArticlesShowController;
 use App\Http\Controllers\News\ShowController;
 use App\Http\Controllers\Notes\IndexController as NotesIndexController;
 use App\Http\Controllers\Parfum\IndexController as ParfumIndexController;
@@ -78,7 +79,8 @@ Route::group([], function () {
     });
 
     Route::prefix('/articles')->group( function () {
-        Route::get('/', [ArticlesIndexController::class, 'index'])->name('articles');
+        Route::get('/', ArticlesIndexController::class)->name('articles');
+        Route::get('/{articles}', ArticlesShowController::class)->name('articles.show');
     });
 
 

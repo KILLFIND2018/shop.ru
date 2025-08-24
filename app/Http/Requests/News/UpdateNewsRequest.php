@@ -26,7 +26,6 @@ class UpdateNewsRequest extends FormRequest
             'title' => 'required|string|max:255',
             'date' => 'required|date',
             'content' => 'required|string',
-            'url_news' => 'nullable|string',
             'is_published' => 'nullable|boolean',
         ];
 

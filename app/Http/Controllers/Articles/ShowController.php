@@ -6,18 +6,13 @@ use App\Http\Controllers\Controller;
 use App\Models\Articles;
 use Illuminate\Http\Request;
 
-class IndexController extends Controller
+class ShowController extends Controller
 {
-
-    public function __invoke()
+    public function __invoke(Articles $articles)
     {
-        $articles = Articles::paginate(10);
-
-
-        return view('articles.index', [
-            'title' => 'Все статьи',
+        return view('articles.show', [
             'articles' => $articles,
+            'title' => 'Статьи'
         ]);
     }
-
 }
